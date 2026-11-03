@@ -3,10 +3,10 @@
 
 backend:
   name: github
-  repo: YOUR-GITHUB-USERNAME/YOUR-REPO-NAME   # <-- CHANGE THIS (e.g. jane/reface-site)
+  repo: cintoanto321-cyber/refaceclothing   # <-- CHANGE THIS (e.g. jane/reface-site)
   branch: main                                # <-- the branch Netlify deploys from
   # If the site is served from a custom domain (not *.netlify.app), also uncomment:
-  # site_domain: www.yourdomain.com
+  site_domain: www.refaceclothing.com
 
 # Uncomment to make every save a draft -> review -> publish step (safer for clients):
 # publish_mode: editorial_workflow
@@ -17,8 +17,8 @@ local_backend: true
 media_folder: "images/uploads"      # where uploaded images are stored in the repo
 public_folder: "/images/uploads"    # how the website refers to them
 
-site_url: https://YOUR-SITE.netlify.app   # <-- CHANGE THIS
-display_url: https://YOUR-SITE.netlify.app
+site_url: https://refaceclothing.com   # <-- CHANGE THIS
+display_url: https://refaceclothing.com
 
 collections:
   - name: pages
