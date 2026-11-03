@@ -1,0 +1,66 @@
+{
+  "hero": {
+    "badge": "Handcrafted Indian Linen & Organic Khadi",
+    "title_line": "Indian Heritage in",
+    "title_accent": "Botanical Luxury.",
+    "description": "Timeless apparel celebrating India’s legendary textile art. Crafted from pure handwoven flax linen, organic khadi, and natural botanical dyes for conscious elegance.",
+    "image": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?q=80&w=1000&auto=format&fit=crop",
+    "image_alt": "reface CLOTHING Linen Collection"
+  },
+  "products_section": {
+    "eyebrow": "Curated Apparel",
+    "heading": "Sustainable Collection"
+  },
+  "sustainability": {
+    "eyebrow": "Rooted in Indian Craft",
+    "heading": "Conscious Textiles, Sacred Tradition",
+    "intro": "Every thread honors generations of Indian master weavers, rainfed organic crops, and ancient natural vat dyeing.",
+    "pillars": [
+      {
+        "title": "Rainfed Indian Flax",
+        "text": "Cultivated in harmony with monsoon rains, our organic flax requires zero heavy chemical fertilizers or depleting groundwater pumps."
+      },
+      {
+        "title": "Desi Botanical Dyes",
+        "text": "Colored naturally using wild Indian indigo, turmeric, harda, and upcycled temple marigold flowers completely free from synthetic azo chemicals."
+      },
+      {
+        "title": "Artisan Weaver Co-Ops",
+        "text": "Supporting rural Indian handloom clusters with fair wages, safe loom environments, and heritage preservation initiatives."
+      }
+    ]
+  },
+  "about": {
+    "eyebrow": "The reface Story",
+    "heading": "Celebrating Indian Craftsmanship",
+    "body": "Founded with a vision to re-imagine traditional Indian textiles for the contemporary wardrobe, **reface CLOTHING** fuses relaxed modern silhouettes with ancient handloom artistry. We celebrate the organic slub, breathability, and natural texture of pure Indian linen and hand-spun khadi."
+  },
+  "video_showcase": {
+    "eyebrow": "Visual Gallery",
+    "heading": "Craft in Motion",
+    "intro": "Explore handloom weaving, indigo botanical dyeing, and signature linen drapes in action.",
+    "videos": [
+      {
+        "title": "Artisanal Handloom",
+        "subtitle": "Traditional Loom Weaving",
+        "overlay_title": "Handloom Weaving & Artisanal Craft",
+        "video_url": "https://assets.mixkit.co/videos/preview/mixkit-handloom-weaver-working-on-a-loom-41558-large.mp4",
+        "poster": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?q=80&w=600&auto=format&fit=crop"
+      },
+      {
+        "title": "Linen Drape & Comfort",
+        "subtitle": "Natural Organic Movement",
+        "overlay_title": "Linen Apparel Drape & Motion",
+        "video_url": "https://assets.mixkit.co/videos/preview/mixkit-woman-wearing-a-linen-dress-walking-outdoors-42861-large.mp4",
+        "poster": "https://images.unsplash.com/photo-1598554747436-c9293d6a588f?q=80&w=600&auto=format&fit=crop"
+      },
+      {
+        "title": "Botanical Indigo Vat",
+        "subtitle": "Pure Plant Extraction",
+        "overlay_title": "Botanical Dye & Organic Texture",
+        "video_url": "https://assets.mixkit.co/videos/preview/mixkit-hands-holding-a-fabric-sample-41555-large.mp4",
+        "poster": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=600&auto=format&fit=crop"
+      }
+    ]
+  }
+}

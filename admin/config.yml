@@ -1,0 +1,124 @@
+# Decap CMS configuration for reface CLOTHING
+# Docs: https://decapcms.org/docs/configuration-options/
+
+backend:
+  name: github
+  repo: YOUR-GITHUB-USERNAME/YOUR-REPO-NAME   # <-- CHANGE THIS (e.g. jane/reface-site)
+  branch: main                                # <-- the branch Netlify deploys from
+  # If the site is served from a custom domain (not *.netlify.app), also uncomment:
+  # site_domain: www.yourdomain.com
+
+# Uncomment to make every save a draft -> review -> publish step (safer for clients):
+# publish_mode: editorial_workflow
+
+# Run `npx decap-server` and open /admin on localhost to edit without logging in:
+local_backend: true
+
+media_folder: "images/uploads"      # where uploaded images are stored in the repo
+public_folder: "/images/uploads"    # how the website refers to them
+
+site_url: https://YOUR-SITE.netlify.app   # <-- CHANGE THIS
+display_url: https://YOUR-SITE.netlify.app
+
+collections:
+  - name: pages
+    label: "Website Content"
+    editor:
+      preview: false
+    files:
+      - name: site
+        label: "Page Text, Images & Videos"
+        file: "content/site.json"
+        format: json
+        fields:
+          - label: "Hero (top of page)"
+            name: hero
+            widget: object
+            fields:
+              - { label: "Badge text", name: badge, widget: string }
+              - { label: "Headline — first line", name: title_line, widget: string }
+              - { label: "Headline — italic accent", name: title_accent, widget: string }
+              - { label: "Description", name: description, widget: text }
+              - { label: "Hero image", name: image, widget: image }
+              - { label: "Hero image description (for accessibility)", name: image_alt, widget: string }
+          - label: "Collection heading"
+            name: products_section
+            widget: object
+            fields:
+              - { label: "Small label", name: eyebrow, widget: string }
+              - { label: "Heading", name: heading, widget: string }
+          - label: "Sustainability section"
+            name: sustainability
+            widget: object
+            fields:
+              - { label: "Small label", name: eyebrow, widget: string }
+              - { label: "Heading", name: heading, widget: string }
+              - { label: "Intro text", name: intro, widget: text }
+              - label: "Pillars (3 cards)"
+                name: pillars
+                widget: list
+                min: 3
+                max: 3
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: "Title", name: title, widget: string }
+                  - { label: "Text", name: text, widget: text }
+          - label: "About section"
+            name: about
+            widget: object
+            fields:
+              - { label: "Small label", name: eyebrow, widget: string }
+              - { label: "Heading", name: heading, widget: string }
+              - { label: "Body text", name: body, widget: text, hint: "Wrap words in **double asterisks** to make them bold." }
+          - label: "Video showcase"
+            name: video_showcase
+            widget: object
+            fields:
+              - { label: "Small label", name: eyebrow, widget: string }
+              - { label: "Heading", name: heading, widget: string }
+              - { label: "Intro text", name: intro, widget: text }
+              - label: "Videos (first one plays by default)"
+                name: videos
+                widget: list
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: "Card title", name: title, widget: string }
+                  - { label: "Card subtitle", name: subtitle, widget: string }
+                  - { label: "Title shown on the player", name: overlay_title, widget: string, required: false }
+                  - { label: "Video file URL (.mp4, https only)", name: video_url, widget: string, pattern: ["^https://.+|^/.+", "Must start with https:// or /"] }
+                  - { label: "Cover image", name: poster, widget: image }
+
+      - name: products
+        label: "Products"
+        file: "content/products.json"
+        format: json
+        fields:
+          - label: "Products"
+            name: products
+            widget: list
+            summary: "{{fields.name}} — {{fields.category}}"
+            fields:
+              - { label: "ID (leave blank for new products)", name: id, widget: string, required: false, hint: "Keep existing IDs unchanged — shopping bags and wishlists rely on them." }
+              - { label: "Name", name: name, widget: string }
+              - label: "Category"
+                name: category
+                widget: select
+                options: [dresses, tops, trousers, outerwear, knitwear, accessories]
+              - { label: "Price (INR)", name: priceINR, widget: number, value_type: int, min: 0 }
+              - { label: "Original price (INR) — shows as struck-through", name: originalPriceINR, widget: number, value_type: int, min: 0, required: false }
+              - { label: "Show NEW badge", name: isNew, widget: boolean, default: false }
+              - { label: "Show BESTSELLER badge", name: isBestSeller, widget: boolean, default: false }
+              - { label: "Rating", name: rating, widget: number, value_type: float, min: 1, max: 5, step: 0.1, default: 5 }
+              - label: "Colours"
+                name: colors
+                widget: list
+                summary: "{{fields.name}}"
+                fields:
+                  - { label: "Colour name", name: name, widget: string }
+                  - { label: "Colour", name: hex, widget: color, enableAlpha: false }
+              - label: "Sizes"
+                name: sizes
+                widget: list
+                field: { label: "Size", name: size, widget: string }
+              - { label: "Photo", name: image, widget: image }
+              - { label: "Description", name: description, widget: text }

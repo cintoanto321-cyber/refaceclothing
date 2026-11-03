@@ -1,0 +1,163 @@
+{
+  "products": [
+    {
+      "id": "prod-1",
+      "name": "Chanderi Linen Belted Sari-Dress",
+      "category": "dresses",
+      "priceINR": 16283,
+      "originalPriceINR": 19200,
+      "isNew": true,
+      "isBestSeller": true,
+      "rating": 4.9,
+      "colors": [
+        {
+          "name": "Oatmeal Khadi",
+          "hex": "#E5DDC8"
+        },
+        {
+          "name": "Desi Sage",
+          "hex": "#98A793"
+        }
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "image": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?q=80&w=1000&auto=format&fit=crop",
+      "description": "Crafted from pure Indian handloom linen with subtle Chanderi zari accents, featuring a versatile waist tie and deep pockets."
+    },
+    {
+      "id": "prod-2",
+      "name": "Khadi Linen Nehru Collar Shirt",
+      "category": "tops",
+      "priceINR": 11273,
+      "originalPriceINR": null,
+      "isNew": false,
+      "isBestSeller": true,
+      "rating": 4.8,
+      "colors": [
+        {
+          "name": "Raw Cream",
+          "hex": "#F4EBE1"
+        },
+        {
+          "name": "Terracotta Clay",
+          "hex": "#C4A482"
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "image": "https://images.unsplash.com/photo-1598554747436-c9293d6a588f?q=80&w=1000&auto=format&fit=crop",
+      "description": "Breathable Indian Khadi linen shirt with an elegant Nehru mandarin collar and coconut shell buttons."
+    },
+    {
+      "id": "prod-3",
+      "name": "Pleated Handloom Linen Trousers",
+      "category": "trousers",
+      "priceINR": 13778,
+      "originalPriceINR": 15800,
+      "isNew": true,
+      "isBestSeller": false,
+      "rating": 4.7,
+      "colors": [
+        {
+          "name": "Charcoal Indigo",
+          "hex": "#2D2D2D"
+        },
+        {
+          "name": "Sand Khadi",
+          "hex": "#E5DDC8"
+        }
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "image": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=1000&auto=format&fit=crop",
+      "description": "Relaxed wide-leg trousers woven from organic Indian hemp and flax with classic front pleats."
+    },
+    {
+      "id": "prod-4",
+      "name": "Structured Organic Flax Angrakha Coat",
+      "category": "outerwear",
+      "priceINR": 23798,
+      "originalPriceINR": null,
+      "isNew": true,
+      "isBestSeller": false,
+      "rating": 5,
+      "colors": [
+        {
+          "name": "Desert Sand",
+          "hex": "#D2B48C"
+        },
+        {
+          "name": "Neel Indigo",
+          "hex": "#98A793"
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "image": "https://images.unsplash.com/photo-1544441893-675973e31985?q=80&w=1000&auto=format&fit=crop",
+      "description": "Lightweight trench coat inspired by traditional Indian Angrakha overlaps for effortless year-round layering."
+    },
+    {
+      "id": "prod-5",
+      "name": "Desi Organic Cotton Chunky Cardigan",
+      "category": "knitwear",
+      "priceINR": 14613,
+      "originalPriceINR": null,
+      "isNew": false,
+      "isBestSeller": true,
+      "rating": 4.9,
+      "colors": [
+        {
+          "name": "Kora Cream",
+          "hex": "#F4EBE1"
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?q=80&w=1000&auto=format&fit=crop",
+      "description": "Hand-knitted cardigan made from rainfed indigenous Kala cotton yarns."
+    },
+    {
+      "id": "prod-6",
+      "name": "Botanical Indigo Linen Dupatta-Scarf",
+      "category": "accessories",
+      "priceINR": 5428,
+      "originalPriceINR": null,
+      "isNew": false,
+      "isBestSeller": false,
+      "rating": 4.6,
+      "colors": [
+        {
+          "name": "Wild Indigo",
+          "hex": "#98A793"
+        },
+        {
+          "name": "Madder Root",
+          "hex": "#C4A482"
+        }
+      ],
+      "sizes": [
+        "One Size"
+      ],
+      "image": "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?q=80&w=1000&auto=format&fit=crop",
+      "description": "Hand-spun pure linen scarf dyed naturally in Rajasthan using wild indigo leaves and madder root extracts."
+    }
+  ]
+}

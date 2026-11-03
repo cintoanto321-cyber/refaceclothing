@@ -1,0 +1,1759 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reface CLOTHING — Sustainable European Linen &amp; Botanical Apparel</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandBg: '#FBF3F0',
+                        brandDark: '#2D2D2D',
+                        brandMuted: '#6B635B',
+                        brandSage: '#98A793',
+                        brandClay: '#C4A482',
+                        brandSand: '#E5DDC8',
+                        brandCardBg: '#FAF7F5'
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Smooth Scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FBF3F0;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #D2C4B8;
+            border-radius: 9999px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #98A793;
+        }
+        
+        .backdrop-glass {
+            background-color: rgba(251, 243, 240, 0.85);
+            backdrop-filter: blur(12px);
+        }
+
+        .img-zoom {
+            transition: transform 0.7s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+        .product-card:hover .img-zoom {
+            transform: scale(1.06);
+        }
+
+        /* Continuous Floating & Pulse Animations for Video Cards */
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-8px) rotate(1deg); }
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% { box-shadow: 0 0 15px rgba(152, 167, 147, 0.3); }
+            50% { box-shadow: 0 0 35px rgba(152, 167, 147, 0.6); }
+        }
+
+        @keyframes videoFadeIn {
+            from { opacity: 0; transform: scale(0.97); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .animate-float {
+            animation: floatSlow 5s ease-in-out infinite;
+        }
+
+        .animate-pulse-glow {
+            animation: pulseGlow 3.5s ease-in-out infinite;
+        }
+
+        .video-autoplay-card {
+            animation: videoFadeIn 1.2s ease-out forwards;
+        }
+
+        /* Modal Overlay Fade */
+        .modal-fade {
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:"Plus Jakarta Sans", sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border-width:0}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.inset-x-0{left:0px;right:0px}.-right-2{right:-0.5rem}.-top-1{top:-0.25rem}.bottom-6{bottom:1.5rem}.left-0\.5{left:0.125rem}.left-4{left:1rem}.right-0{right:0px}.right-4{right:1rem}.right-6{right:1.5rem}.top-0{top:0px}.top-0\.5{top:0.125rem}.top-10{top:2.5rem}.top-4{top:1rem}.left-16{left:4rem}.left-3{left:0.75rem}.right-3{right:0.75rem}.top-3{top:0.75rem}.z-10{z-index:10}.z-20{z-index:20}.z-30{z-index:30}.z-40{z-index:40}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mb-12{margin-bottom:3rem}.mb-16{margin-bottom:4rem}.ml-2{margin-left:0.5rem}.mt-1{margin-top:0.25rem}.mt-2{margin-top:0.5rem}.mt-0\.5{margin-top:0.125rem}.mt-12{margin-top:3rem}.mt-4{margin-top:1rem}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.aspect-\[4\/5\]{aspect-ratio:4/5}.aspect-\[3\/4\]{aspect-ratio:3/4}.h-14{height:3.5rem}.h-16{height:4rem}.h-2\.5{height:0.625rem}.h-20{height:5rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-full{height:100%}.h-1\.5{height:0.375rem}.h-2{height:0.5rem}.h-8{height:2rem}.max-h-\[90vh\]{max-height:90vh}.max-h-48{max-height:12rem}.w-1\/3{width:33.333333%}.w-14{width:3.5rem}.w-2\.5{width:0.625rem}.w-4{width:1rem}.w-4\/5{width:80%}.w-9{width:2.25rem}.w-auto{width:auto}.w-full{width:100%}.w-0{width:0px}.w-16{width:4rem}.w-2\/5{width:40%}.w-8{width:2rem}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-5xl{max-width:64rem}.max-w-7xl{max-width:80rem}.max-w-lg{max-width:32rem}.max-w-md{max-width:28rem}.max-w-sm{max-width:24rem}.max-w-xl{max-width:36rem}.flex-1{flex:1 1 0%}.flex-grow{flex-grow:1}.-translate-x-full{--tw-translate-x:-100%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-x-full{--tw-translate-x:100%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.items-baseline{align-items:baseline}.justify-start{justify-content:flex-start}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-1\.5{gap:0.375rem}.gap-12{gap:3rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.gap-10{gap:2.5rem}.space-x-1 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.25rem * var(--tw-space-x-reverse));margin-left:calc(0.25rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-2 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.5rem * var(--tw-space-x-reverse));margin-left:calc(0.5rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-3 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.75rem * var(--tw-space-x-reverse));margin-left:calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-4 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1rem * var(--tw-space-x-reverse));margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-7 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1.75rem * var(--tw-space-x-reverse));margin-left:calc(1.75rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-1 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.25rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.space-y-1\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.375rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.375rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem * var(--tw-space-y-reverse))}.space-x-1\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.375rem * var(--tw-space-x-reverse));margin-left:calc(0.375rem * calc(1 - var(--tw-space-x-reverse)))}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.scroll-smooth{scroll-behavior:smooth}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-4{border-width:4px}.border-b{border-bottom-width:1px}.border-b-2{border-bottom-width:2px}.border-l{border-left-width:1px}.border-t{border-top-width:1px}.border-dashed{border-style:dashed}.border-brandDark{--tw-border-opacity:1;border-color:rgb(45 45 45 / var(--tw-border-opacity, 1))}.border-brandDark\/10{border-color:rgb(45 45 45 / 0.1)}.border-brandDark\/20{border-color:rgb(45 45 45 / 0.2)}.border-brandDark\/5{border-color:rgb(45 45 45 / 0.05)}.border-brandSage\/30{border-color:rgb(152 167 147 / 0.3)}.border-brandSage\/40{border-color:rgb(152 167 147 / 0.4)}.border-stone-300{--tw-border-opacity:1;border-color:rgb(214 211 209 / var(--tw-border-opacity, 1))}.border-stone-600{--tw-border-opacity:1;border-color:rgb(87 83 78 / var(--tw-border-opacity, 1))}.border-stone-800{--tw-border-opacity:1;border-color:rgb(41 37 36 / var(--tw-border-opacity, 1))}.border-transparent{border-color:transparent}.border-white{--tw-border-opacity:1;border-color:rgb(255 255 255 / var(--tw-border-opacity, 1))}.border-white\/20{border-color:rgb(255 255 255 / 0.2)}.border-brandSage{--tw-border-opacity:1;border-color:rgb(152 167 147 / var(--tw-border-opacity, 1))}.border-red-100{--tw-border-opacity:1;border-color:rgb(254 226 226 / var(--tw-border-opacity, 1))}.border-red-200{--tw-border-opacity:1;border-color:rgb(254 202 202 / var(--tw-border-opacity, 1))}.border-stone-200{--tw-border-opacity:1;border-color:rgb(231 229 228 / var(--tw-border-opacity, 1))}.border-white\/10{border-color:rgb(255 255 255 / 0.1)}.bg-brandBg{--tw-bg-opacity:1;background-color:rgb(251 243 240 / var(--tw-bg-opacity, 1))}.bg-brandCardBg{--tw-bg-opacity:1;background-color:rgb(250 247 245 / var(--tw-bg-opacity, 1))}.bg-brandClay{--tw-bg-opacity:1;background-color:rgb(196 164 130 / var(--tw-bg-opacity, 1))}.bg-brandDark{--tw-bg-opacity:1;background-color:rgb(45 45 45 / var(--tw-bg-opacity, 1))}.bg-brandDark\/50{background-color:rgb(45 45 45 / 0.5)}.bg-brandDark\/70{background-color:rgb(45 45 45 / 0.7)}.bg-brandDark\/80{background-color:rgb(45 45 45 / 0.8)}.bg-brandSage{--tw-bg-opacity:1;background-color:rgb(152 167 147 / var(--tw-bg-opacity, 1))}.bg-brandSage\/15{background-color:rgb(152 167 147 / 0.15)}.bg-brandSage\/20{background-color:rgb(152 167 147 / 0.2)}.bg-emerald-700{--tw-bg-opacity:1;background-color:rgb(4 120 87 / var(--tw-bg-opacity, 1))}.bg-red-600{--tw-bg-opacity:1;background-color:rgb(220 38 38 / var(--tw-bg-opacity, 1))}.bg-stone-100{--tw-bg-opacity:1;background-color:rgb(245 245 244 / var(--tw-bg-opacity, 1))}.bg-stone-400{--tw-bg-opacity:1;background-color:rgb(168 162 158 / var(--tw-bg-opacity, 1))}.bg-stone-700{--tw-bg-opacity:1;background-color:rgb(68 64 60 / var(--tw-bg-opacity, 1))}.bg-stone-800{--tw-bg-opacity:1;background-color:rgb(41 37 36 / var(--tw-bg-opacity, 1))}.bg-stone-900\/60{background-color:rgb(28 25 23 / 0.6)}.bg-transparent{background-color:transparent}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/10{background-color:rgb(255 255 255 / 0.1)}.bg-brandDark\/60{background-color:rgb(45 45 45 / 0.6)}.bg-brandSage\/10{background-color:rgb(152 167 147 / 0.1)}.bg-brandSage\/30{background-color:rgb(152 167 147 / 0.3)}.bg-red-100{--tw-bg-opacity:1;background-color:rgb(254 226 226 / var(--tw-bg-opacity, 1))}.bg-red-50{--tw-bg-opacity:1;background-color:rgb(254 242 242 / var(--tw-bg-opacity, 1))}.bg-stone-200{--tw-bg-opacity:1;background-color:rgb(231 229 228 / var(--tw-bg-opacity, 1))}.bg-stone-900{--tw-bg-opacity:1;background-color:rgb(28 25 23 / var(--tw-bg-opacity, 1))}.bg-white\/80{background-color:rgb(255 255 255 / 0.8)}.object-cover{object-fit:cover}.object-top{object-position:top}.p-1{padding:0.25rem}.p-2{padding:0.5rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.p-3{padding:0.75rem}.p-5{padding:1.25rem}.px-1\.5{padding-left:0.375rem;padding-right:0.375rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-8{padding-top:2rem;padding-bottom:2rem}.px-1{padding-left:0.25rem;padding-right:0.25rem}.py-3\.5{padding-top:0.875rem;padding-bottom:0.875rem}.pb-4{padding-bottom:1rem}.pl-2{padding-left:0.5rem}.pt-2{padding-top:0.5rem}.pt-4{padding-top:1rem}.pt-1{padding-top:0.25rem}.pt-12{padding-top:3rem}.text-center{text-align:center}.font-sans{font-family:"Plus Jakarta Sans", sans-serif}.font-serif{font-family:"Cormorant Garamond", serif}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-\[9px\]{font-size:9px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.text-\[8px\]{font-size:8px}.font-bold{font-weight:700}.font-light{font-weight:300}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.lowercase{text-transform:lowercase}.capitalize{text-transform:capitalize}.italic{font-style:italic}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.tracking-\[0\.35em\]{letter-spacing:0.35em}.text-brandBg{--tw-text-opacity:1;color:rgb(251 243 240 / var(--tw-text-opacity, 1))}.text-brandDark{--tw-text-opacity:1;color:rgb(45 45 45 / var(--tw-text-opacity, 1))}.text-brandMuted{--tw-text-opacity:1;color:rgb(107 99 91 / var(--tw-text-opacity, 1))}.text-brandSage{--tw-text-opacity:1;color:rgb(152 167 147 / var(--tw-text-opacity, 1))}.text-red-300{--tw-text-opacity:1;color:rgb(252 165 165 / var(--tw-text-opacity, 1))}.text-stone-200{--tw-text-opacity:1;color:rgb(231 229 228 / var(--tw-text-opacity, 1))}.text-stone-300{--tw-text-opacity:1;color:rgb(214 211 209 / var(--tw-text-opacity, 1))}.text-stone-400{--tw-text-opacity:1;color:rgb(168 162 158 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-emerald-600{--tw-text-opacity:1;color:rgb(5 150 105 / var(--tw-text-opacity, 1))}.text-red-600{--tw-text-opacity:1;color:rgb(220 38 38 / var(--tw-text-opacity, 1))}.text-red-700{--tw-text-opacity:1;color:rgb(185 28 28 / var(--tw-text-opacity, 1))}.text-stone-500{--tw-text-opacity:1;color:rgb(120 113 108 / var(--tw-text-opacity, 1))}.text-stone-600{--tw-text-opacity:1;color:rgb(87 83 78 / var(--tw-text-opacity, 1))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.line-through{-webkit-text-decoration-line:line-through;text-decoration-line:line-through}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-0{opacity:0}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow{--tw-shadow:0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-200{transition-duration:200ms}.duration-300{transition-duration:300ms}.duration-500{transition-duration:500ms}.selection\:bg-brandSage *::selection{--tw-bg-opacity:1;background-color:rgb(152 167 147 / var(--tw-bg-opacity, 1))}.selection\:text-white *::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.selection\:bg-brandSage::selection{--tw-bg-opacity:1;background-color:rgb(152 167 147 / var(--tw-bg-opacity, 1))}.selection\:text-white::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:bg-brandSage:hover{--tw-bg-opacity:1;background-color:rgb(152 167 147 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-600:hover{--tw-bg-opacity:1;background-color:rgb(5 150 105 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-800:hover{--tw-bg-opacity:1;background-color:rgb(6 95 70 / var(--tw-bg-opacity, 1))}.hover\:bg-red-700:hover{--tw-bg-opacity:1;background-color:rgb(185 28 28 / var(--tw-bg-opacity, 1))}.hover\:bg-red-950:hover{--tw-bg-opacity:1;background-color:rgb(69 10 10 / var(--tw-bg-opacity, 1))}.hover\:bg-stone-600:hover{--tw-bg-opacity:1;background-color:rgb(87 83 78 / var(--tw-bg-opacity, 1))}.hover\:bg-stone-700:hover{--tw-bg-opacity:1;background-color:rgb(68 64 60 / var(--tw-bg-opacity, 1))}.hover\:bg-white:hover{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.hover\:bg-white\/20:hover{background-color:rgb(255 255 255 / 0.2)}.hover\:text-brandDark:hover{--tw-text-opacity:1;color:rgb(45 45 45 / var(--tw-text-opacity, 1))}.hover\:text-brandSage:hover{--tw-text-opacity:1;color:rgb(152 167 147 / var(--tw-text-opacity, 1))}.hover\:text-red-200:hover{--tw-text-opacity:1;color:rgb(254 202 202 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:underline:hover{-webkit-text-decoration-line:underline;text-decoration-line:underline}.hover\:shadow-xl:hover{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.focus\:border-brandSage:focus{--tw-border-opacity:1;border-color:rgb(152 167 147 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-brandSage:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(152 167 147 / var(--tw-ring-opacity, 1))}.group:hover .group-hover\:scale-105{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:scale-110{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@media (min-width: 640px){.sm\:mt-0{margin-top:0px}.sm\:block{display:block}.sm\:inline{display:inline}.sm\:h-20{height:5rem}.sm\:h-24{height:6rem}.sm\:w-auto{width:auto}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:gap-3{gap:0.75rem}.sm\:space-x-6 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1.5rem * var(--tw-space-x-reverse));margin-left:calc(1.5rem * calc(1 - var(--tw-space-x-reverse)))}.sm\:p-2\.5{padding:0.625rem}.sm\:p-8{padding:2rem}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:px-8{padding-left:2rem;padding-right:2rem}.sm\:py-24{padding-top:6rem;padding-bottom:6rem}.sm\:text-4xl{font-size:2.25rem;line-height:2.5rem}.sm\:text-5xl{font-size:3rem;line-height:1}.sm\:text-6xl{font-size:3.75rem;line-height:1}.sm\:text-base{font-size:1rem;line-height:1.5rem}}@media (min-width: 768px){.md\:absolute{position:absolute}.md\:left-1\/2{left:50%}.md\:inline-block{display:inline-block}.md\:flex{display:flex}.md\:hidden{display:none}.md\:w-1\/3{width:33.333333%}.md\:-translate-x-1\/2{--tw-translate-x:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:items-end{align-items:flex-end}}@media (min-width: 1024px){.lg\:col-span-6{grid-column:span 6 / span 6}.lg\:mx-0{margin-left:0px;margin-right:0px}.lg\:max-w-none{max-width:none}.lg\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:justify-start{justify-content:flex-start}.lg\:px-8{padding-left:2rem;padding-right:2rem}.lg\:py-28{padding-top:7rem;padding-bottom:7rem}.lg\:text-left{text-align:left}.lg\:text-7xl{font-size:4.5rem;line-height:1}}@media (min-width: 1280px){.xl\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}}</style></head>
+<body class="bg-brandBg text-brandDark font-sans antialiased selection:bg-brandSage selection:text-white">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-brandDark text-brandBg text-[11px] py-2.5 px-4 text-center font-medium tracking-wider uppercase flex justify-between items-center sm:px-8">
+        <span class="hidden md:inline-block text-stone-400" id="cms-top-announcement">🌿 100% Handwoven Indian Khadi &amp; Organic Flax Linen</span>
+        <span id="cms-shipping-announcement">Complimentary Express Shipping Across India on Orders Over ₹5,000</span>
+        <div class="flex items-center space-x-3 text-stone-300">
+            <!-- Currency Switcher -->
+            <label for="currency-select" class="sr-only">Select Currency</label>
+            <select id="currency-select" onchange="changeCurrency(this.value)" class="bg-transparent text-stone-200 border border-stone-600 rounded px-1.5 py-0.5 text-[10px] uppercase focus:outline-none focus:border-brandSage cursor-pointer">
+                <option value="INR" selected="" class="bg-brandDark text-white">INR ₹</option>
+                <option value="USD" class="bg-brandDark text-white">USD $</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Sticky Navigation Header -->
+    <header id="main-header" class="sticky top-0 z-40 w-full h-20 sm:h-24 backdrop-glass border-b border-brandDark/10 transition-all duration-300">
+        <div class="max-w-7xl mx-auto h-full px-4 sm:px-6 lg:px-8 flex items-center justify-between relative">
+            
+            <!-- Left Links (Desktop) -->
+            <nav class="hidden md:flex items-center space-x-7 text-xs uppercase tracking-widest font-semibold text-brandMuted w-1/3 justify-start">
+                <a href="#products-section" onclick="filterProducts('all')" class="hover:text-brandDark transition-colors">Shop All</a>
+                <a href="#sustainability" class="hover:text-brandDark transition-colors">Ethos</a>
+                <a href="#about" class="hover:text-brandDark transition-colors">About Us</a>
+            </nav>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button onclick="toggleMobileNav()" class="md:hidden text-brandDark p-2 focus:outline-none z-10" aria-label="Toggle Navigation Menu">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+
+            <!-- CENTERED BRAND LOGO -->
+            <a href="#" class="flex flex-col items-center justify-center text-center group py-1 relative cursor-pointer md:absolute md:left-1/2 md:-translate-x-1/2">
+                <div id="brand-logo-container" class="flex flex-col items-center justify-center">
+                    <svg id="header-brand-logo-svg" class="h-16 sm:h-20 w-auto text-brandDark transition-transform group-hover:scale-105 duration-300" viewBox="0 0 240 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Calligraphic R monogram -->
+                        <path d="M 85 70 C 80 50, 95 25, 128 25 C 145 25, 155 35, 152 48 C 147 62, 130 68, 105 65 L 155 92" stroke="#2D2D2D" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <!-- Top Leaf Accent -->
+                        <path d="M 160 18 C 175 14, 192 28, 192 28 C 192 28, 175 42, 160 18 Z" stroke="#2D2D2D" stroke-width="3" stroke-linejoin="round" fill="none"></path>
+                        <!-- Bottom Leaf Accent -->
+                        <path d="M 162 38 C 177 34, 194 48, 194 48 C 194 48, 177 62, 162 38 Z" stroke="#2D2D2D" stroke-width="3" stroke-linejoin="round" fill="none"></path>
+                        <!-- reface wordmark -->
+                        <text x="120" y="132" font-family="'Cormorant Garamond', serif" font-size="44" font-weight="500" fill="#2D2D2D" text-anchor="middle" letter-spacing="-0.02em">reface</text>
+                        <!-- CLOTHING subtext -->
+                        <text x="120" y="162" font-family="'Plus Jakarta Sans', sans-serif" font-size="15" font-weight="600" fill="#2D2D2D" text-anchor="middle" letter-spacing="0.38em">CLOTHING</text>
+                    </svg>
+                </div>
+            </a>
+
+            <!-- Right Action Icons -->
+            <div class="flex items-center space-x-4 sm:space-x-6 w-auto md:w-1/3 justify-end z-10">
+                <!-- User Account Button -->
+                <button onclick="handleAccountClick()" class="text-brandDark hover:text-brandSage transition-colors p-1 relative flex items-center space-x-1 group" aria-label="User Account">
+                    <i class="fa-regular fa-user text-lg group-hover:scale-110 transition-transform"></i>
+                    <span id="account-badge-dot" class="hidden absolute top-0 right-0 w-2.5 h-2.5 bg-brandSage rounded-full border border-white"></span>
+                </button>
+
+                <!-- Wishlist Quick View Button -->
+                <button onclick="openWishlistModal()" class="hidden sm:block text-brandDark hover:text-brandSage transition-colors p-1 relative" aria-label="Wishlist">
+                    <i class="fa-regular fa-heart text-lg"></i>
+                    <span id="wishlist-count" class="absolute -top-1 -right-2 bg-brandClay text-white text-[9px] w-4 h-4 rounded-full flex items-center justify-center font-bold">0</span>
+                </button>
+
+                <!-- Shopping Bag Drawer Trigger -->
+                <button onclick="toggleCartDrawer()" class="bg-brandDark text-brandBg hover:bg-brandSage transition-colors px-3.5 py-2 rounded-full flex items-center space-x-2 text-xs font-semibold tracking-wider uppercase shadow-sm">
+                    <i class="fa-solid fa-bag-shopping text-xs"></i>
+                    <span class="hidden sm:inline">Bag</span>
+                    <span id="cart-count-badge" class="bg-brandBg text-brandDark text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MOBILE NAVIGATION DRAWER -->
+    <div id="mobile-nav" class="fixed inset-0 z-50 bg-brandDark/50 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300 md:hidden">
+        <div class="w-4/5 max-w-sm bg-brandBg h-full p-6 shadow-2xl flex flex-col justify-between transform -translate-x-full transition-transform duration-300" id="mobile-nav-content">
+            <div class="space-y-6">
+                <div class="flex items-center justify-between border-b border-brandDark/10 pb-4">
+                    <span class="font-serif text-2xl text-brandDark font-bold lowercase">reface</span>
+                    <button onclick="toggleMobileNav()" class="text-brandDark text-xl p-1" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <nav class="flex flex-col space-y-4 text-sm font-semibold tracking-widest uppercase text-brandMuted">
+                    <a href="#products-section" onclick="toggleMobileNav(); filterProducts('all')" class="hover:text-brandDark">Shop All Apparel</a>
+                    <a href="#products-section" onclick="toggleMobileNav(); filterProducts('tops')" class="hover:text-brandDark">Tops &amp; Shirts</a>
+                    <a href="#products-section" onclick="toggleMobileNav(); filterProducts('dresses')" class="hover:text-brandDark">Dresses</a>
+                    <a href="#products-section" onclick="toggleMobileNav(); filterProducts('trousers')" class="hover:text-brandDark">Trousers &amp; Shorts</a>
+                    <a href="#products-section" onclick="toggleMobileNav(); filterProducts('outerwear')" class="hover:text-brandDark">Outerwear</a>
+                    <a href="#products-section" onclick="toggleMobileNav(); filterProducts('knitwear')" class="hover:text-brandDark">Organic Knitwear</a>
+                    <a href="#products-section" onclick="toggleMobileNav(); filterProducts('accessories')" class="hover:text-brandDark">Botanical Accessories</a>
+                    <a href="#sustainability" onclick="toggleMobileNav()" class="hover:text-brandDark border-t border-brandDark/10 pt-4">Sustainable Ethos</a>
+                </nav>
+            </div>
+            <div class="text-xs text-brandMuted border-t border-brandDark/10 pt-4">
+                <p class="font-medium text-brandDark mb-1">Customer Support</p>
+                <p>hello@refaceclothing.com</p>
+                <p>+91 (0) 800 248 1900</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section id="hero-section" class="relative bg-brandCardBg overflow-hidden py-16 sm:py-24 lg:py-28 border-b border-brandDark/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Text Content -->
+                <div class="lg:col-span-6 space-y-6 text-center lg:text-left z-10">
+                    <div class="inline-flex items-center space-x-2 bg-brandSage/15 text-brandSage text-xs uppercase tracking-widest font-semibold px-3.5 py-1.5 rounded-full">
+                        <i class="fa-solid fa-seedling"></i>
+                        <span data-cms="hero.badge">Handcrafted Indian Linen &amp; Organic Khadi</span>
+                    </div>
+                    <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-normal leading-tight text-brandDark" id="cms-hero-title">
+                        <span data-cms="hero.title_line">Indian Heritage in</span> <br class="hidden sm:inline">
+<span class="italic font-light text-brandMuted" data-cms="hero.title_accent">Botanical Luxury.</span>
+                    </h1>
+                    <p class="text-brandMuted text-sm sm:text-base font-light max-w-lg mx-auto lg:mx-0 leading-relaxed" id="cms-hero-desc" data-cms="hero.description">
+                        Timeless apparel celebrating India’s legendary textile art. Crafted from pure handwoven flax linen, organic khadi, and natural botanical dyes for conscious elegance.
+                    </p>
+                    <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#products-section" class="w-full sm:w-auto px-8 py-4 bg-brandDark text-brandBg rounded-full text-xs font-semibold tracking-widest uppercase hover:bg-brandSage transition-all duration-300 shadow-lg text-center">
+                            Explore Heritage Collection
+                        </a>
+                        <a href="#sustainability" class="w-full sm:w-auto px-8 py-4 border border-brandDark/20 text-brandDark rounded-full text-xs font-semibold tracking-widest uppercase hover:bg-white transition-all duration-300 text-center flex items-center justify-center space-x-2">
+                            <span>Our Ethos</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Image Grid -->
+                <div class="lg:col-span-6 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border-4 border-white relative group">
+                            <img id="hero-img-element" data-cms-src="hero.image" data-cms-alt="hero.image_alt" src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" alt="reface CLOTHING Linen Collection" class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-brandDark/30 via-transparent to-transparent pointer-events-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORY FILTER & CATALOG SECTION -->
+    <section id="products-section" class="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header & Category Filter Buttons -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+            <div>
+                <span class="text-xs font-semibold uppercase tracking-widest text-brandSage" data-cms="products_section.eyebrow">Curated Apparel</span>
+                <h2 class="font-serif text-3xl sm:text-4xl text-brandDark mt-1" data-cms="products_section.heading">Sustainable Collection</h2>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-3">
+
+                <!-- Filter Buttons -->
+                <div id="category-filters" class="flex flex-wrap gap-2 sm:gap-3">
+                    <button onclick="filterProducts('all')" data-cat="all" class="filter-btn active-filter px-5 py-2 rounded-full text-xs font-semibold tracking-wider uppercase transition-all duration-300 bg-brandDark text-white shadow-sm">
+                        All Pieces
+                    </button>
+                    <button onclick="filterProducts('tops')" data-cat="tops" class="filter-btn px-5 py-2 rounded-full text-xs font-semibold tracking-wider uppercase transition-all duration-300 bg-white text-brandMuted hover:text-brandDark border border-brandDark/10">
+                        Tops &amp; Shirts
+                    </button>
+                    <button onclick="filterProducts('dresses')" data-cat="dresses" class="filter-btn px-5 py-2 rounded-full text-xs font-semibold tracking-wider uppercase transition-all duration-300 bg-white text-brandMuted hover:text-brandDark border border-brandDark/10">
+                        Dresses
+                    </button>
+                    <button onclick="filterProducts('trousers')" data-cat="trousers" class="filter-btn px-5 py-2 rounded-full text-xs font-semibold tracking-wider uppercase transition-all duration-300 bg-white text-brandMuted hover:text-brandDark border border-brandDark/10">
+                        Trousers
+                    </button>
+                    <button onclick="filterProducts('outerwear')" data-cat="outerwear" class="filter-btn px-5 py-2 rounded-full text-xs font-semibold tracking-wider uppercase transition-all duration-300 bg-white text-brandMuted hover:text-brandDark border border-brandDark/10">
+                        Outerwear
+                    </button>
+                    <button onclick="filterProducts('knitwear')" data-cat="knitwear" class="filter-btn px-5 py-2 rounded-full text-xs font-semibold tracking-wider uppercase transition-all duration-300 bg-white text-brandMuted hover:text-brandDark border border-brandDark/10">
+                        Knitwear
+                    </button>
+                    <button onclick="filterProducts('accessories')" data-cat="accessories" class="filter-btn px-5 py-2 rounded-full text-xs font-semibold tracking-wider uppercase transition-all duration-300 bg-white text-brandMuted hover:text-brandDark border border-brandDark/10">
+                        Accessories
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Products Grid -->
+        <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"><div class="product-card group bg-brandCardBg rounded-2xl overflow-hidden border border-brandDark/5 flex flex-col justify-between transition-all duration-300 hover:shadow-xl">
+                    <div class="relative aspect-[3/4] bg-stone-200 overflow-hidden cursor-pointer" onclick="openQuickView('prod-1')">
+                        <img id="img-prod-1" src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" alt="Chanderi Linen Belted Sari-Dress" class="w-full h-full object-cover img-zoom">
+                        
+                        <!-- Badges -->
+                        <div class="absolute top-3 left-3 flex flex-col gap-1.5">
+                            <span class="bg-brandDark text-white text-[9px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full">NEW</span>
+                            <span class="bg-brandSage text-white text-[9px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full">BESTSELLER</span>
+                        </div>
+
+                        <!-- Wishlist Button -->
+                        <button onclick="event.stopPropagation(); toggleWishlist('prod-1')" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/80 hover:bg-white text-brandDark flex items-center justify-center transition-colors">
+                            <i class="fa-regular fa-heart text-xs"></i>
+                        </button>
+                    </div>
+
+                    <div class="p-5 space-y-3 flex-grow flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start">
+                                <h3 onclick="openQuickView('prod-1')" class="font-serif text-lg font-semibold text-brandDark hover:text-brandSage cursor-pointer transition-colors">Chanderi Linen Belted Sari-Dress</h3>
+                            </div>
+                            <p class="text-xs text-brandMuted capitalize">dresses</p>
+                        </div>
+
+                        <div class="flex items-center justify-between pt-2 border-t border-brandDark/5">
+                            <div class="space-x-1.5">
+                                <span class="font-bold text-brandDark text-sm">₹16,283</span>
+                                <span class="text-xs text-stone-400 line-through">₹19,200</span>
+                            </div>
+                            <button onclick="addToCart('prod-1')" class="px-3.5 py-1.5 bg-brandDark text-white text-[10px] font-bold uppercase tracking-wider rounded-lg hover:bg-brandSage transition-colors">
+                                Add +
+                            </button>
+                        </div>
+                    </div>
+                </div><div class="product-card group bg-brandCardBg rounded-2xl overflow-hidden border border-brandDark/5 flex flex-col justify-between transition-all duration-300 hover:shadow-xl">
+                    <div class="relative aspect-[3/4] bg-stone-200 overflow-hidden cursor-pointer" onclick="openQuickView('prod-2')">
+                        <img id="img-prod-2" src="https://images.unsplash.com/photo-1598554747436-c9293d6a588f?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" alt="Khadi Linen Nehru Collar Shirt" class="w-full h-full object-cover img-zoom">
+                        
+                        <!-- Badges -->
+                        <div class="absolute top-3 left-3 flex flex-col gap-1.5">
+                            
+                            <span class="bg-brandSage text-white text-[9px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full">BESTSELLER</span>
+                        </div>
+
+                        <!-- Wishlist Button -->
+                        <button onclick="event.stopPropagation(); toggleWishlist('prod-2')" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/80 hover:bg-white text-brandDark flex items-center justify-center transition-colors">
+                            <i class="fa-regular fa-heart text-xs"></i>
+                        </button>
+                    </div>
+
+                    <div class="p-5 space-y-3 flex-grow flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start">
+                                <h3 onclick="openQuickView('prod-2')" class="font-serif text-lg font-semibold text-brandDark hover:text-brandSage cursor-pointer transition-colors">Khadi Linen Nehru Collar Shirt</h3>
+                            </div>
+                            <p class="text-xs text-brandMuted capitalize">tops</p>
+                        </div>
+
+                        <div class="flex items-center justify-between pt-2 border-t border-brandDark/5">
+                            <div class="space-x-1.5">
+                                <span class="font-bold text-brandDark text-sm">₹11,273</span>
+                                
+                            </div>
+                            <button onclick="addToCart('prod-2')" class="px-3.5 py-1.5 bg-brandDark text-white text-[10px] font-bold uppercase tracking-wider rounded-lg hover:bg-brandSage transition-colors">
+                                Add +
+                            </button>
+                        </div>
+                    </div>
+                </div><div class="product-card group bg-brandCardBg rounded-2xl overflow-hidden border border-brandDark/5 flex flex-col justify-between transition-all duration-300 hover:shadow-xl">
+                    <div class="relative aspect-[3/4] bg-stone-200 overflow-hidden cursor-pointer" onclick="openQuickView('prod-3')">
+                        <img id="img-prod-3" src="https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" alt="Pleated Handloom Linen Trousers" class="w-full h-full object-cover img-zoom">
+                        
+                        <!-- Badges -->
+                        <div class="absolute top-3 left-3 flex flex-col gap-1.5">
+                            <span class="bg-brandDark text-white text-[9px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full">NEW</span>
+                            
+                        </div>
+
+                        <!-- Wishlist Button -->
+                        <button onclick="event.stopPropagation(); toggleWishlist('prod-3')" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/80 hover:bg-white text-brandDark flex items-center justify-center transition-colors">
+                            <i class="fa-regular fa-heart text-xs"></i>
+                        </button>
+                    </div>
+
+                    <div class="p-5 space-y-3 flex-grow flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start">
+                                <h3 onclick="openQuickView('prod-3')" class="font-serif text-lg font-semibold text-brandDark hover:text-brandSage cursor-pointer transition-colors">Pleated Handloom Linen Trousers</h3>
+                            </div>
+                            <p class="text-xs text-brandMuted capitalize">trousers</p>
+                        </div>
+
+                        <div class="flex items-center justify-between pt-2 border-t border-brandDark/5">
+                            <div class="space-x-1.5">
+                                <span class="font-bold text-brandDark text-sm">₹13,778</span>
+                                <span class="text-xs text-stone-400 line-through">₹15,800</span>
+                            </div>
+                            <button onclick="addToCart('prod-3')" class="px-3.5 py-1.5 bg-brandDark text-white text-[10px] font-bold uppercase tracking-wider rounded-lg hover:bg-brandSage transition-colors">
+                                Add +
+                            </button>
+                        </div>
+                    </div>
+                </div><div class="product-card group bg-brandCardBg rounded-2xl overflow-hidden border border-brandDark/5 flex flex-col justify-between transition-all duration-300 hover:shadow-xl">
+                    <div class="relative aspect-[3/4] bg-stone-200 overflow-hidden cursor-pointer" onclick="openQuickView('prod-4')">
+                        <img id="img-prod-4" src="https://images.unsplash.com/photo-1544441893-675973e31985?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" alt="Structured Organic Flax Angrakha Coat" class="w-full h-full object-cover img-zoom">
+                        
+                        <!-- Badges -->
+                        <div class="absolute top-3 left-3 flex flex-col gap-1.5">
+                            <span class="bg-brandDark text-white text-[9px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full">NEW</span>
+                            
+                        </div>
+
+                        <!-- Wishlist Button -->
+                        <button onclick="event.stopPropagation(); toggleWishlist('prod-4')" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/80 hover:bg-white text-brandDark flex items-center justify-center transition-colors">
+                            <i class="fa-regular fa-heart text-xs"></i>
+                        </button>
+                    </div>
+
+                    <div class="p-5 space-y-3 flex-grow flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start">
+                                <h3 onclick="openQuickView('prod-4')" class="font-serif text-lg font-semibold text-brandDark hover:text-brandSage cursor-pointer transition-colors">Structured Organic Flax Angrakha Coat</h3>
+                            </div>
+                            <p class="text-xs text-brandMuted capitalize">outerwear</p>
+                        </div>
+
+                        <div class="flex items-center justify-between pt-2 border-t border-brandDark/5">
+                            <div class="space-x-1.5">
+                                <span class="font-bold text-brandDark text-sm">₹23,798</span>
+                                
+                            </div>
+                            <button onclick="addToCart('prod-4')" class="px-3.5 py-1.5 bg-brandDark text-white text-[10px] font-bold uppercase tracking-wider rounded-lg hover:bg-brandSage transition-colors">
+                                Add +
+                            </button>
+                        </div>
+                    </div>
+                </div><div class="product-card group bg-brandCardBg rounded-2xl overflow-hidden border border-brandDark/5 flex flex-col justify-between transition-all duration-300 hover:shadow-xl">
+                    <div class="relative aspect-[3/4] bg-stone-200 overflow-hidden cursor-pointer" onclick="openQuickView('prod-5')">
+                        <img id="img-prod-5" src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" alt="Desi Organic Cotton Chunky Cardigan" class="w-full h-full object-cover img-zoom">
+                        
+                        <!-- Badges -->
+                        <div class="absolute top-3 left-3 flex flex-col gap-1.5">
+                            
+                            <span class="bg-brandSage text-white text-[9px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full">BESTSELLER</span>
+                        </div>
+
+                        <!-- Wishlist Button -->
+                        <button onclick="event.stopPropagation(); toggleWishlist('prod-5')" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/80 hover:bg-white text-brandDark flex items-center justify-center transition-colors">
+                            <i class="fa-regular fa-heart text-xs"></i>
+                        </button>
+                    </div>
+
+                    <div class="p-5 space-y-3 flex-grow flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start">
+                                <h3 onclick="openQuickView('prod-5')" class="font-serif text-lg font-semibold text-brandDark hover:text-brandSage cursor-pointer transition-colors">Desi Organic Cotton Chunky Cardigan</h3>
+                            </div>
+                            <p class="text-xs text-brandMuted capitalize">knitwear</p>
+                        </div>
+
+                        <div class="flex items-center justify-between pt-2 border-t border-brandDark/5">
+                            <div class="space-x-1.5">
+                                <span class="font-bold text-brandDark text-sm">₹14,613</span>
+                                
+                            </div>
+                            <button onclick="addToCart('prod-5')" class="px-3.5 py-1.5 bg-brandDark text-white text-[10px] font-bold uppercase tracking-wider rounded-lg hover:bg-brandSage transition-colors">
+                                Add +
+                            </button>
+                        </div>
+                    </div>
+                </div><div class="product-card group bg-brandCardBg rounded-2xl overflow-hidden border border-brandDark/5 flex flex-col justify-between transition-all duration-300 hover:shadow-xl">
+                    <div class="relative aspect-[3/4] bg-stone-200 overflow-hidden cursor-pointer" onclick="openQuickView('prod-6')">
+                        <img id="img-prod-6" src="https://images.unsplash.com/photo-1601924994987-69e26d50dc26?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" alt="Botanical Indigo Linen Dupatta-Scarf" class="w-full h-full object-cover img-zoom">
+                        
+                        <!-- Badges -->
+                        <div class="absolute top-3 left-3 flex flex-col gap-1.5">
+                            
+                            
+                        </div>
+
+                        <!-- Wishlist Button -->
+                        <button onclick="event.stopPropagation(); toggleWishlist('prod-6')" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/80 hover:bg-white text-brandDark flex items-center justify-center transition-colors">
+                            <i class="fa-regular fa-heart text-xs"></i>
+                        </button>
+                    </div>
+
+                    <div class="p-5 space-y-3 flex-grow flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start">
+                                <h3 onclick="openQuickView('prod-6')" class="font-serif text-lg font-semibold text-brandDark hover:text-brandSage cursor-pointer transition-colors">Botanical Indigo Linen Dupatta-Scarf</h3>
+                            </div>
+                            <p class="text-xs text-brandMuted capitalize">accessories</p>
+                        </div>
+
+                        <div class="flex items-center justify-between pt-2 border-t border-brandDark/5">
+                            <div class="space-x-1.5">
+                                <span class="font-bold text-brandDark text-sm">₹5,428</span>
+                                
+                            </div>
+                            <button onclick="addToCart('prod-6')" class="px-3.5 py-1.5 bg-brandDark text-white text-[10px] font-bold uppercase tracking-wider rounded-lg hover:bg-brandSage transition-colors">
+                                Add +
+                            </button>
+                        </div>
+                    </div>
+                </div></div>
+    </section>
+
+    <!-- SUSTAINABILITY ETHOS BANNER -->
+    <section id="sustainability" class="bg-brandDark text-brandBg py-20 border-t border-b border-stone-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <span class="text-xs uppercase tracking-widest font-semibold text-brandSage" data-cms="sustainability.eyebrow">Rooted in Indian Craft</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-normal" data-cms="sustainability.heading">Conscious Textiles, Sacred Tradition</h2>
+                <p class="text-stone-400 text-sm font-light leading-relaxed" data-cms="sustainability.intro">
+                    Every thread honors generations of Indian master weavers, rainfed organic crops, and ancient natural vat dyeing.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Pillar 1 -->
+                <div class="bg-stone-900/60 p-8 rounded-2xl border border-stone-800 text-center space-y-4">
+                    <div class="w-14 h-14 bg-brandSage/20 text-brandSage rounded-full flex items-center justify-center mx-auto text-xl">
+                        <i class="fa-solid fa-droplet-slash"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-semibold" data-cms="sustainability.pillars.0.title">Rainfed Indian Flax</h3>
+                    <p class="text-stone-400 text-xs leading-relaxed font-light" data-cms="sustainability.pillars.0.text">
+                        Cultivated in harmony with monsoon rains, our organic flax requires zero heavy chemical fertilizers or depleting groundwater pumps.
+                    </p>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="bg-stone-900/60 p-8 rounded-2xl border border-stone-800 text-center space-y-4">
+                    <div class="w-14 h-14 bg-brandSage/20 text-brandSage rounded-full flex items-center justify-center mx-auto text-xl">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-semibold" data-cms="sustainability.pillars.1.title">Desi Botanical Dyes</h3>
+                    <p class="text-stone-400 text-xs leading-relaxed font-light" data-cms="sustainability.pillars.1.text">
+                        Colored naturally using wild Indian indigo, turmeric, harda, and upcycled temple marigold flowers completely free from synthetic azo chemicals.
+                    </p>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="bg-stone-900/60 p-8 rounded-2xl border border-stone-800 text-center space-y-4">
+                    <div class="w-14 h-14 bg-brandSage/20 text-brandSage rounded-full flex items-center justify-center mx-auto text-xl">
+                        <i class="fa-solid fa-hands-holding-circle"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-semibold" data-cms="sustainability.pillars.2.title">Artisan Weaver Co-Ops</h3>
+                    <p class="text-stone-400 text-xs leading-relaxed font-light" data-cms="sustainability.pillars.2.text">
+                        Supporting rural Indian handloom clusters with fair wages, safe loom environments, and heritage preservation initiatives.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+        <span class="text-xs font-semibold uppercase tracking-widest text-brandSage" data-cms="about.eyebrow">The reface Story</span>
+        <h2 class="font-serif text-3xl sm:text-5xl text-brandDark" data-cms="about.heading">Celebrating Indian Craftsmanship</h2>
+        <p class="text-brandMuted text-sm sm:text-base font-light leading-relaxed max-w-3xl mx-auto" data-cms-rich="about.body">
+            Founded with a vision to re-imagine traditional Indian textiles for the contemporary wardrobe, <strong>reface CLOTHING</strong> fuses relaxed modern silhouettes with ancient handloom artistry. We celebrate the organic slub, breathability, and natural texture of pure Indian linen and hand-spun khadi.
+        </p>
+    </section>
+
+    <!-- CUSTOMIZABLE VIDEO SHOWCASE SECTION -->
+    <section id="video-showcase-section" class="bg-brandDark text-brandBg py-20 border-t border-b border-stone-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+            
+            <!-- Section Header -->
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+                <div class="space-y-2">
+                    <span class="text-xs uppercase tracking-widest font-semibold text-brandSage flex items-center gap-2">
+                        <i class="fa-solid fa-clapperboard"></i> <span data-cms="video_showcase.eyebrow">Visual Gallery</span>
+                    </span>
+                    <h2 class="font-serif text-3xl sm:text-5xl font-normal text-white" data-cms="video_showcase.heading">Craft in Motion</h2>
+                    <p class="text-stone-400 text-sm font-light max-w-lg" data-cms="video_showcase.intro">
+                        Explore handloom weaving, indigo botanical dyeing, and signature linen drapes in action.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Featured Main Video Player Container -->
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-stone-800 bg-stone-900 group">
+                <video id="showcase-main-video" class="w-full h-[360px] sm:h-[520px] object-cover" poster="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?q=80&w=1200&auto=format&fit=crop" loop muted playsinline controls>
+                    <source id="showcase-video-src" src="https://assets.mixkit.co/videos/preview/mixkit-handloom-weaver-working-on-a-loom-41558-large.mp4" type="video/mp4">
+                    Your browser does not support html5 video.
+                </video>
+                
+                <!-- Overlay Badges & Controls -->
+                <div class="absolute bottom-6 left-6 right-6 flex justify-between items-center z-20 pointer-events-none">
+                    <div class="bg-brandDark/80 backdrop-blur-md px-4 py-2 rounded-2xl border border-white/10 text-white">
+                        <p id="showcase-video-title" class="font-serif font-bold text-lg">Handloom Weaving & Artisanal Craft</p>
+                        <p id="showcase-video-subtitle" class="text-xs text-brandSage">Botanical Dyeing & Hand-Spun Linen</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alternate Video Selection Grid -->
+            <div id="video-grid" class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <!-- Video Item 1 -->
+                <div onclick="switchShowcaseVideo('https://assets.mixkit.co/videos/preview/mixkit-handloom-weaver-working-on-a-loom-41558-large.mp4', 'Handloom Weaving & Artisanal Craft', 'https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?q=80&w=600&auto=format&fit=crop')" class="cursor-pointer bg-stone-900 rounded-2xl p-3 border border-stone-800 hover:border-brandSage transition-all group">
+                    <div class="aspect-video bg-stone-800 rounded-xl overflow-hidden relative mb-3">
+                        <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-brandDark/40 flex items-center justify-center">
+                            <i class="fa-solid fa-circle-play text-white text-3xl group-hover:scale-110 transition-transform"></i>
+                        </div>
+                    </div>
+                    <p class="font-serif font-bold text-sm text-white">Artisanal Handloom</p>
+                    <p class="text-[11px] text-stone-400">Traditional Loom Weaving</p>
+                </div>
+
+                <!-- Video Item 2 -->
+                <div onclick="switchShowcaseVideo('https://assets.mixkit.co/videos/preview/mixkit-woman-wearing-a-linen-dress-walking-outdoors-42861-large.mp4', 'Linen Apparel Drape & Motion', 'https://images.unsplash.com/photo-1598554747436-c9293d6a588f?q=80&w=600&auto=format&fit=crop')" class="cursor-pointer bg-stone-900 rounded-2xl p-3 border border-stone-800 hover:border-brandSage transition-all group">
+                    <div class="aspect-video bg-stone-800 rounded-xl overflow-hidden relative mb-3">
+                        <img src="https://images.unsplash.com/photo-1598554747436-c9293d6a588f?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-brandDark/40 flex items-center justify-center">
+                            <i class="fa-solid fa-circle-play text-white text-3xl group-hover:scale-110 transition-transform"></i>
+                        </div>
+                    </div>
+                    <p class="font-serif font-bold text-sm text-white">Linen Drape & Comfort</p>
+                    <p class="text-[11px] text-stone-400">Natural Organic Movement</p>
+                </div>
+
+                <!-- Video Item 3 -->
+                <div onclick="switchShowcaseVideo('https://assets.mixkit.co/videos/preview/mixkit-hands-holding-a-fabric-sample-41555-large.mp4', 'Botanical Dye & Organic Texture', 'https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=600&auto=format&fit=crop')" class="cursor-pointer bg-stone-900 rounded-2xl p-3 border border-stone-800 hover:border-brandSage transition-all group">
+                    <div class="aspect-video bg-stone-800 rounded-xl overflow-hidden relative mb-3">
+                        <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-brandDark/40 flex items-center justify-center">
+                            <i class="fa-solid fa-circle-play text-white text-3xl group-hover:scale-110 transition-transform"></i>
+                        </div>
+                    </div>
+                    <p class="font-serif font-bold text-sm text-white">Botanical Indigo Vat</p>
+                    <p class="text-[11px] text-stone-400">Pure Plant Extraction</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- USER ACCOUNT / LIVE LOYALTY DASHBOARD MODAL -->
+    <div id="account-modal" class="fixed inset-0 z-50 bg-brandDark/70 backdrop-blur-md hidden flex items-center justify-center p-4">
+        <div class="bg-brandBg w-full max-w-lg rounded-3xl overflow-hidden shadow-2xl relative border border-brandDark/10 p-6 sm:p-8 space-y-6 max-h-[90vh] overflow-y-auto">
+            <button onclick="closeAccountModal()" class="absolute top-4 right-4 text-brandDark hover:text-brandSage p-2">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <!-- GUEST VIEW: LIVE SIGN IN / LIVE REGISTER -->
+            <div id="account-guest-view" class="space-y-6">
+                <div class="text-center space-y-1">
+                    <h3 class="font-serif text-3xl font-bold text-brandDark">Reface Account Portal</h3>
+                    <p class="text-xs text-brandMuted font-light">Access live orders, rewards &amp; organic linen perks</p>
+                </div>
+
+                <div class="flex border-b border-brandDark/10 text-xs font-bold tracking-wider uppercase">
+                    <button onclick="switchAuthTab('login')" id="tab-login" class="flex-1 py-2.5 border-b-2 border-brandDark text-brandDark font-bold">Sign In Live</button>
+                    <button onclick="switchAuthTab('register')" id="tab-register" class="flex-1 py-2.5 border-b-2 border-transparent text-stone-400 font-semibold">Register Account</button>
+                </div>
+
+                <!-- Live Auth Form -->
+                <form onsubmit="handleAuthSubmit(event)" class="space-y-3">
+                    <!-- Registration Specific: Full Name -->
+                    <div id="field-name" class="hidden space-y-1">
+                        <label class="text-[10px] uppercase font-bold text-brandDark">Full Name</label>
+                        <input type="text" id="auth-name" placeholder="E.g. Ananya Sharma" class="w-full px-4 py-2.5 rounded-xl border border-brandDark/20 bg-white text-xs text-brandDark focus:outline-none focus:border-brandSage">
+                    </div>
+
+                    <!-- Email Field -->
+                    <div class="space-y-1">
+                        <label class="text-[10px] uppercase font-bold text-brandDark">Email Address</label>
+                        <input type="email" id="auth-email" required="" placeholder="name@example.com" class="w-full px-4 py-2.5 rounded-xl border border-brandDark/20 bg-white text-xs text-brandDark focus:outline-none focus:border-brandSage">
+                    </div>
+
+                    <!-- Registration Specific: Phone Number -->
+                    <div id="field-phone" class="hidden space-y-1">
+                        <label class="text-[10px] uppercase font-bold text-brandDark">Phone Number</label>
+                        <input type="tel" id="auth-phone" placeholder="+91 98765 43210" class="w-full px-4 py-2.5 rounded-xl border border-brandDark/20 bg-white text-xs text-brandDark focus:outline-none focus:border-brandSage">
+                    </div>
+
+                    <!-- Password Field -->
+                    <div class="space-y-1">
+                        <label id="label-password" class="text-[10px] uppercase font-bold text-brandDark">Password</label>
+                        <input type="password" id="auth-password" required="" placeholder="••••••••" class="w-full px-4 py-2.5 rounded-xl border border-brandDark/20 bg-white text-xs text-brandDark focus:outline-none focus:border-brandSage">
+                    </div>
+
+                    <!-- Registration Specific: Eco-Updates Subscription -->
+                    <div id="field-newsletter" class="hidden flex items-center space-x-2 pt-1">
+                        <input type="checkbox" id="auth-newsletter" checked="" class="rounded border-brandDark/20 text-brandSage focus:ring-brandSage cursor-pointer">
+                        <label for="auth-newsletter" class="text-[10px] text-brandMuted font-light cursor-pointer">
+                            Subscribe to botanical collection updates &amp; claim 200 bonus Eco-Points.
+                        </label>
+                    </div>
+
+                    <button type="submit" id="auth-submit-btn" class="w-full py-3.5 bg-brandDark text-white rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-brandSage transition-all shadow-md mt-2">
+                        Sign In
+                    </button>
+                </form>
+
+                <div class="bg-stone-100 p-3 rounded-xl border border-stone-200 text-center">
+                    <p class="text-[10px] text-brandMuted font-medium">Quick Demo Access: Click <button onclick="quickDemoLogin()" class="text-brandDark underline font-bold">Sign In as Demo Customer</button></p>
+                </div>
+            </div>
+
+            <!-- LOGGED IN LIVE DASHBOARD VIEW -->
+            <div id="account-user-view" class="hidden space-y-6">
+                <!-- User Profile Header -->
+                <div class="flex items-center justify-between border-b border-brandDark/10 pb-4">
+                    <div>
+                        <span class="text-[10px] uppercase font-bold tracking-widest text-brandSage">Active Customer Account</span>
+                        <h3 id="user-display-name" class="font-serif text-2xl font-bold text-brandDark">User Name</h3>
+                        <p id="user-display-email" class="text-xs text-brandMuted font-light">user@example.com</p>
+                        <p id="user-display-phone" class="text-[10px] text-stone-500 font-light mt-0.5"></p>
+                    </div>
+                    <button onclick="logoutUser()" class="text-xs text-red-600 hover:underline font-bold px-3 py-1 bg-red-50 rounded-lg border border-red-100">Sign Out</button>
+                </div>
+
+                <!-- ECO-REWARDS DASHBOARD CARD -->
+                <div class="bg-brandDark text-brandBg p-5 rounded-2xl space-y-3 relative overflow-hidden shadow-lg">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="text-[9px] uppercase font-bold tracking-widest text-brandSage">Reface Eco-Rewards</span>
+                            <div class="flex items-baseline space-x-2">
+                                <span id="user-points-val" class="font-serif text-3xl font-bold text-white">200</span>
+                                <span class="text-xs text-stone-300">Points</span>
+                            </div>
+                        </div>
+                        <span id="user-tier-badge" class="bg-brandSage/30 text-brandSage text-[10px] font-bold uppercase px-3 py-1 rounded-full border border-brandSage/40">
+                            🌿 Seedling Tier
+                        </span>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="flex justify-between text-[10px] text-stone-400">
+                            <span>Next Tier: Bloom (500 pts)</span>
+                            <span id="pts-to-next">300 pts left</span>
+                        </div>
+                        <div class="w-full bg-stone-800 h-1.5 rounded-full overflow-hidden">
+                            <div id="pts-progress-bar" class="bg-brandSage h-full w-2/5"></div>
+                        </div>
+                    </div>
+                    <div class="pt-2 flex justify-between items-center border-t border-white/10">
+                        <span class="text-[10px] text-stone-300">Use points for ₹800 discount in bag</span>
+                        <button onclick="togglePointsRedemption(); closeAccountModal(); toggleCartDrawer(true);" class="px-3 py-1 bg-brandSage text-white text-[10px] font-bold uppercase rounded hover:bg-emerald-600 transition-colors">
+                            Redeem Points
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Dynamic Live Order History Summary -->
+                <div class="space-y-2">
+                    <div class="flex items-center justify-between">
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-brandDark">Recent Order History</h4>
+                        <span class="text-[10px] text-stone-400" id="order-count-text">1 Order</span>
+                    </div>
+                    <div id="order-history-list" class="space-y-2 max-h-48 overflow-y-auto text-xs text-brandMuted">
+                        <div class="p-3 bg-white rounded-xl border border-brandDark/10 flex justify-between items-center">
+                            <div>
+                                <p class="font-bold text-brandDark">Order #RFC-94821</p>
+                                <p class="text-[10px]">2 items • Organic Linen Set • Delivered</p>
+                            </div>
+                            <span class="font-bold text-brandDark">₹24,890</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE-OUT SHOPPING BAG DRAWER -->
+    <div id="cart-drawer" class="fixed inset-0 z-50 bg-brandDark/60 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300">
+        <div id="cart-drawer-content" class="absolute top-0 right-0 w-full max-w-md bg-brandBg h-full shadow-2xl flex flex-col justify-between transform translate-x-full transition-transform duration-300">
+            
+            <!-- Cart Header -->
+            <div class="p-6 border-b border-brandDark/10 flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <i class="fa-solid fa-bag-shopping text-brandDark"></i>
+                    <h3 class="font-serif text-xl font-bold text-brandDark">Your Shopping Bag</h3>
+                    <span id="cart-items-count-heading" class="text-xs text-brandMuted font-semibold">(0)</span>
+                </div>
+                <button onclick="toggleCartDrawer()" class="text-brandDark hover:text-brandSage p-1 text-lg">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- Free Shipping Progress Bar -->
+            <div class="bg-brandCardBg p-4 border-b border-brandDark/5 px-6 space-y-1.5">
+                <div class="flex justify-between text-xs font-semibold text-brandDark">
+                    <span id="shipping-progress-text">Free Shipping Progress</span>
+                    <span id="shipping-progress-amount">₹5,000 away</span>
+                </div>
+                <div class="w-full bg-stone-200 h-2 rounded-full overflow-hidden">
+                    <div id="shipping-progress-bar" class="bg-brandSage h-full w-0 transition-all duration-500" style="width: 0%;"></div>
+                </div>
+            </div>
+
+            <!-- Cart Items List -->
+            <div id="cart-items-container" class="flex-grow p-6 overflow-y-auto space-y-4"></div>
+
+            <!-- Cart Footer & Checkout -->
+            <div class="p-6 border-t border-brandDark/10 bg-white space-y-4">
+                
+                <!-- Loyalty Points Redeem Toggle -->
+                <div id="loyalty-cart-box" class="hidden bg-brandSage/10 p-3 rounded-xl flex items-center justify-between text-xs">
+                    <div class="flex items-center space-x-2">
+                        <i class="fa-solid fa-coins text-brandSage text-sm"></i>
+                        <div>
+                            <p class="font-bold text-brandDark">Redeem Eco-Rewards</p>
+                            <p class="text-[10px] text-brandMuted">Use 200 pts for discount</p>
+                        </div>
+                    </div>
+                    <button id="redeem-pts-btn" onclick="togglePointsRedemption()" class="px-3 py-1 bg-brandSage text-white rounded-lg text-[10px] font-bold uppercase">
+                        Apply
+                    </button>
+                </div>
+
+                <!-- Promo Code -->
+                <div class="flex space-x-2">
+                    <input type="text" id="promo-input" placeholder="Promo code (e.g. REFACE15)" class="flex-grow px-3 py-2 border border-brandDark/20 rounded-xl text-xs uppercase focus:outline-none focus:border-brandSage">
+                    <button onclick="applyPromoCode()" class="px-4 py-2 bg-brandDark text-white text-xs font-bold uppercase rounded-xl hover:bg-brandSage transition-colors">
+                        Apply
+                    </button>
+                </div>
+
+                <!-- Price Summary -->
+                <div class="space-y-1.5 text-xs text-brandMuted font-medium">
+                    <div class="flex justify-between">
+                        <span>Subtotal</span>
+                        <span id="cart-subtotal-val">₹0</span>
+                    </div>
+                    <div id="discount-row" class="flex justify-between text-brandSage hidden">
+                        <span>Discount</span>
+                        <span id="cart-discount-val">-₹0</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span>Estimated Shipping</span>
+                        <span id="cart-shipping-val">Calculated next</span>
+                    </div>
+                    <div class="flex justify-between text-sm font-bold text-brandDark pt-2 border-t border-brandDark/10">
+                        <span>Total Amount</span>
+                        <span id="cart-total-val" class="text-base text-brandDark">₹0</span>
+                    </div>
+                </div>
+
+                <!-- Checkout Button -->
+                <button onclick="openCheckoutModal()" class="w-full py-4 bg-brandDark text-brandBg rounded-2xl text-xs font-bold uppercase tracking-widest hover:bg-brandSage transition-all duration-300 shadow-xl flex items-center justify-center space-x-2">
+                    <span>Proceed to Checkout</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-brandCardBg border-t border-brandDark/10 py-16 text-xs text-brandMuted">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-10">
+            <!-- Col 1: Brand -->
+            <div class="space-y-4">
+                <div class="flex flex-col items-start">
+                    <span class="font-serif text-2xl font-bold text-brandDark lowercase">reface</span>
+                    <span class="text-[8px] tracking-[0.35em] uppercase text-brandMuted font-bold">CLOTHING</span>
+                </div>
+                <p class="text-brandMuted leading-relaxed font-light">
+                    Handwoven Indian Organic Linen, Khadi &amp; Botanical Apparel. Crafted for mindful living.
+                </p>
+                <div class="flex space-x-4 text-brandDark text-base pt-2">
+                    <a href="#" class="hover:text-brandSage transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:text-brandSage transition-colors"><i class="fa-brands fa-pinterest"></i></a>
+                    <a href="#" class="hover:text-brandSage transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="hover:text-brandSage transition-colors"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <!-- Col 2: Collections -->
+            <div class="space-y-3">
+                <p class="font-bold uppercase tracking-wider text-brandDark">Shop Collections</p>
+                <ul class="space-y-2 font-medium">
+                    <li><a href="#products-section" onclick="filterProducts('tops')" class="hover:text-brandDark">Linen Shirts &amp; Tops</a></li>
+                    <li><a href="#products-section" onclick="filterProducts('dresses')" class="hover:text-brandDark">Botanical Dresses</a></li>
+                    <li><a href="#products-section" onclick="filterProducts('trousers')" class="hover:text-brandDark">Wide Leg Trousers</a></li>
+                    <li><a href="#products-section" onclick="filterProducts('knitwear')" class="hover:text-brandDark">Organic Knitwear</a></li>
+                    <li><a href="#products-section" onclick="filterProducts('accessories')" class="hover:text-brandDark">Eco Accessories</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Customer Care -->
+            <div class="space-y-3">
+                <p class="font-bold uppercase tracking-wider text-brandDark">Customer Care</p>
+                <ul class="space-y-2 font-medium">
+                    <li><a href="#" class="hover:text-brandDark">Shipping &amp; Returns (India &amp; Global)</a></li>
+                    <li><a href="#" class="hover:text-brandDark">Garment Eco Care Guide</a></li>
+                    <li><a href="#" class="hover:text-brandDark">Reface Eco-Rewards Program</a></li>
+                    <li><a href="#" class="hover:text-brandDark">Sustainability Certifications</a></li>
+                    <li><a href="#" class="hover:text-brandDark">Contact Customer Support</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 4: Newsletter -->
+            <div class="space-y-3">
+                <p class="font-bold uppercase tracking-wider text-brandDark">Join the Community</p>
+                <p class="text-brandMuted font-light">Subscribe to receive private collection previews and 10% off your first INR order.</p>
+                <form onsubmit="handleNewsletter(event)" class="space-y-2">
+                    <input type="email" placeholder="Enter your email address" required="" class="w-full px-4 py-2.5 rounded-xl border border-brandDark/20 bg-white text-brandDark focus:outline-none focus:border-brandSage text-xs">
+                    <button type="submit" class="w-full py-2.5 bg-brandDark text-white font-semibold uppercase tracking-wider rounded-xl hover:bg-brandSage transition-colors">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 mt-12 border-t border-brandDark/10 flex flex-col sm:flex-row justify-between items-center text-[11px] text-stone-500">
+            <p>© 2026 reface CLOTHING. All rights reserved. Designed with Sustainable Principles.</p>
+            <div class="flex space-x-4 mt-4 sm:mt-0">
+                <a href="#" class="hover:underline">Privacy Policy</a>
+                <a href="#" class="hover:underline">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CHECKOUT MODAL -->
+    <div id="checkout-modal" class="fixed inset-0 z-50 bg-brandDark/70 backdrop-blur-md hidden flex items-center justify-center p-4">
+        <div class="bg-brandBg w-full max-w-xl rounded-3xl overflow-hidden shadow-2xl relative border border-brandDark/10 p-6 sm:p-8 space-y-6 max-h-[90vh] overflow-y-auto">
+            <button onclick="closeCheckoutModal()" class="absolute top-4 right-4 text-brandDark hover:text-brandSage p-2">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <div class="text-center space-y-1">
+                <span class="text-[10px] font-bold uppercase tracking-widest text-brandSage">Secure Order Express</span>
+                <h3 class="font-serif text-3xl font-bold text-brandDark">Checkout &amp; Shipping</h3>
+            </div>
+
+            <form onsubmit="handleCheckoutSubmit(event)" class="space-y-4 text-xs">
+                <!-- Shipping Info -->
+                <div class="space-y-3">
+                    <h4 class="font-bold uppercase tracking-wider text-brandDark">1. Delivery Address</h4>
+                    <div class="grid grid-cols-2 gap-3">
+                        <input type="text" required="" placeholder="First Name" class="px-3.5 py-2.5 rounded-xl border border-brandDark/20 bg-white text-brandDark focus:outline-none focus:border-brandSage">
+                        <input type="text" required="" placeholder="Last Name" class="px-3.5 py-2.5 rounded-xl border border-brandDark/20 bg-white text-brandDark focus:outline-none focus:border-brandSage">
+                    </div>
+                    <input type="text" required="" placeholder="Street Address / Apartment" class="w-full px-3.5 py-2.5 rounded-xl border border-brandDark/20 bg-white text-brandDark focus:outline-none focus:border-brandSage">
+                    <div class="grid grid-cols-3 gap-3">
+                        <input type="text" required="" placeholder="City" class="px-3.5 py-2.5 rounded-xl border border-brandDark/20 bg-white text-brandDark focus:outline-none focus:border-brandSage">
+                        <input type="text" required="" placeholder="State" class="px-3.5 py-2.5 rounded-xl border border-brandDark/20 bg-white text-brandDark focus:outline-none focus:border-brandSage">
+                        <input type="text" required="" placeholder="PIN Code" class="px-3.5 py-2.5 rounded-xl border border-brandDark/20 bg-white text-brandDark focus:outline-none focus:border-brandSage">
+                    </div>
+                </div>
+
+                <!-- Payment Method -->
+                <div class="space-y-3 pt-2">
+                    <h4 class="font-bold uppercase tracking-wider text-brandDark">2. Select Payment Option</h4>
+                    <div class="grid grid-cols-2 gap-3">
+                        <label class="p-3 border rounded-xl bg-white flex items-center space-x-2 cursor-pointer border-brandSage">
+                            <input type="radio" name="payment-method" value="upi" checked="" class="text-brandSage">
+                            <span class="font-bold">UPI / NetBanking</span>
+                        </label>
+                        <label class="p-3 border rounded-xl bg-white flex items-center space-x-2 cursor-pointer border-brandDark/20">
+                            <input type="radio" name="payment-method" value="card" class="text-brandSage">
+                            <span class="font-bold">Credit/Debit Card</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="pt-4 border-t border-brandDark/10">
+                    <button type="submit" class="w-full py-4 bg-brandDark text-brandBg rounded-2xl text-xs font-bold uppercase tracking-widest hover:bg-brandSage transition-all shadow-xl">
+                        Complete Order (<span id="checkout-final-amt">₹0</span>)
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- ORDER CONFIRMATION MODAL -->
+    <div id="confirmation-modal" class="fixed inset-0 z-50 bg-brandDark/80 backdrop-blur-md hidden flex items-center justify-center p-4">
+        <div class="bg-white w-full max-w-md rounded-3xl overflow-hidden shadow-2xl p-8 text-center space-y-6">
+            <div class="w-16 h-16 bg-brandSage/20 text-brandSage rounded-full flex items-center justify-center mx-auto text-2xl">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="space-y-2">
+                <span class="text-[10px] uppercase tracking-widest font-bold text-brandSage">Order Confirmed</span>
+                <h3 class="font-serif text-3xl font-bold text-brandDark">Thank You for Your Order</h3>
+                <p id="confirm-order-id" class="text-xs font-mono text-brandMuted">Order #RFC-83921</p>
+            </div>
+            <p class="text-xs text-brandMuted font-light leading-relaxed">
+                We've received your request. A confirmation email with tracking details will be dispatched as soon as your organic flax apparel is packaged.
+            </p>
+            <div class="pt-4 space-y-2">
+                <button onclick="closeConfirmationModal()" class="w-full py-3.5 bg-brandDark text-white rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-brandSage transition-all">
+                    Continue Shopping
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- WISHLIST MODAL -->
+    <div id="wishlist-modal" class="fixed inset-0 z-50 bg-brandDark/70 backdrop-blur-md hidden flex items-center justify-center p-4">
+        <div class="bg-brandBg w-full max-w-lg rounded-3xl overflow-hidden shadow-2xl relative border border-brandDark/10 p-6 sm:p-8 space-y-6 max-h-[90vh] overflow-y-auto">
+            <button onclick="closeWishlistModal()" class="absolute top-4 right-4 text-brandDark hover:text-brandSage p-2">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <div class="text-center space-y-1">
+                <span class="text-[10px] font-bold uppercase tracking-widest text-brandSage">Saved Essentials</span>
+                <h3 class="font-serif text-3xl font-bold text-brandDark">Your Wishlist</h3>
+            </div>
+
+            <div id="wishlist-items-container" class="space-y-3">
+                <!-- Wishlist items rendered dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- CMS CONTENT LOADER (reads /content/*.json edited via /admin) -->
+    <script>
+(function () {
+  'use strict';
+  // Allow only http(s) or same-site paths for any URL that comes from the CMS.
+  function safeUrl(u) {
+    if (typeof u !== 'string') return '';
+    u = u.trim();
+    if (/^https:\/\//i.test(u) || /^\/(?!\/)/.test(u)) return u;
+    return '';
+  }
+  function get(obj, path) {
+    return path.split('.').reduce(function (o, k) { return o == null ? o : o[k]; }, obj);
+  }
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+  // Tiny rich-text: escape everything, then allow **bold** and line breaks only.
+  function rich(s) {
+    return esc(s).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br>');
+  }
+  // Product text is placed into HTML templates: drop characters that could break out of markup.
+  function clean(v) { return String(v == null ? '' : v).replace(/[<>"`]/g, ''); }
+  function fetchJson(url) {
+    return fetch(url, { cache: 'no-cache' }).then(function (r) {
+      if (!r.ok) throw new Error(url + ' ' + r.status);
+      return r.json();
+    });
+  }
+
+  function applySite(site) {
+    document.querySelectorAll('[data-cms]').forEach(function (el) {
+      var v = get(site, el.getAttribute('data-cms'));
+      if (typeof v === 'string' && v) el.textContent = v;
+    });
+    document.querySelectorAll('[data-cms-rich]').forEach(function (el) {
+      var v = get(site, el.getAttribute('data-cms-rich'));
+      if (typeof v === 'string' && v) el.innerHTML = rich(v);
+    });
+    document.querySelectorAll('[data-cms-src]').forEach(function (el) {
+      var u = safeUrl(get(site, el.getAttribute('data-cms-src')));
+      if (u) el.src = u;
+      var altKey = el.getAttribute('data-cms-alt');
+      var alt = altKey && get(site, altKey);
+      if (typeof alt === 'string') el.alt = alt;
+    });
+    buildVideos(site.video_showcase && site.video_showcase.videos);
+  }
+
+  function buildVideos(videos) {
+    var grid = document.getElementById('video-grid');
+    if (!grid || !Array.isArray(videos) || !videos.length) return;
+    grid.textContent = '';
+    videos.forEach(function (v, i) {
+      var url = safeUrl(v.video_url), poster = safeUrl(v.poster);
+      if (!url) return;
+      var card = document.createElement('div');
+      card.className = 'group cursor-pointer';
+      card.addEventListener('click', function () {
+        switchShowcaseVideo(url, v.overlay_title || v.title, poster, v.subtitle);
+      });
+      var thumb = document.createElement('div');
+      thumb.className = 'aspect-video bg-stone-800 rounded-xl overflow-hidden relative mb-3';
+      if (poster) {
+        var img = document.createElement('img');
+        img.src = poster; img.alt = '';
+        img.className = 'w-full h-full object-cover group-hover:scale-105 transition-transform duration-500';
+        thumb.appendChild(img);
+      }
+      var ov = document.createElement('div');
+      ov.className = 'absolute inset-0 bg-brandDark/40 flex items-center justify-center';
+      ov.innerHTML = '<i class="fa-solid fa-circle-play text-white text-3xl group-hover:scale-110 transition-transform"></i>';
+      thumb.appendChild(ov);
+      var t = document.createElement('p');
+      t.className = 'font-serif font-bold text-sm text-white'; t.textContent = v.title || '';
+      var s = document.createElement('p');
+      s.className = 'text-[11px] text-stone-400'; s.textContent = v.subtitle || '';
+      card.appendChild(thumb); card.appendChild(t); card.appendChild(s);
+      grid.appendChild(card);
+    });
+    // Main player starts on the first video
+    var first = videos[0], player = document.getElementById('showcase-main-video');
+    var src = document.getElementById('showcase-video-src');
+    if (first && player && src) {
+      var u = safeUrl(first.video_url), p = safeUrl(first.poster);
+      if (u && src.getAttribute('src') !== u) { src.src = u; player.load(); }
+      if (p) player.poster = p;
+      var tt = document.getElementById('showcase-video-title'), st = document.getElementById('showcase-video-subtitle');
+      if (tt) tt.textContent = first.overlay_title || first.title || '';
+      if (st) st.textContent = first.subtitle || '';
+    }
+  }
+
+  function toProducts(data) {
+    if (!data || !Array.isArray(data.products) || !data.products.length) return null;
+    var HEX = /^#[0-9a-fA-F]{6}$/;
+    return data.products.map(function (p, i) {
+      return {
+        id: String(p.id || 'prod-' + (i + 1)).replace(/[^a-zA-Z0-9_-]/g, ''),
+        name: clean(p.name),
+        category: clean(p.category) || 'accessories',
+        priceINR: Number(p.priceINR) || 0,
+        originalPriceINR: p.originalPriceINR ? Number(p.originalPriceINR) : null,
+        isNew: !!p.isNew,
+        isBestSeller: !!p.isBestSeller,
+        rating: Number(p.rating) || 0,
+        colors: (p.colors || []).map(function (c) {
+          return { name: clean(c.name), class: 'bg-[' + (HEX.test(c.hex) ? c.hex : '#E5DDC8') + ']' };
+        }),
+        sizes: (p.sizes || []).map(clean),
+        image: safeUrl(p.image) || '',
+        description: clean(p.description)
+      };
+    });
+  }
+
+  window.RefaceCMS = {
+    // Calls back with the product list (or null when unavailable); text content is applied directly.
+    load: function (done) {
+      var products = null, pending = 2;
+      function finish() { if (--pending === 0) done(products); }
+      fetchJson('/content/site.json').then(applySite).catch(function (e) { console.warn('CMS site.json:', e); }).then(finish);
+      fetchJson('/content/products.json').then(function (d) { products = toProducts(d); }).catch(function (e) { console.warn('CMS products.json:', e); }).then(finish);
+    }
+  };
+})();
+
+    </script>
+
+    <!-- JAVASCRIPT STATE & APPLICATION ENGINE -->
+    <script>
+        // --- 1. GLOBAL STATE & DATA ---
+        let currentCurrency = 'INR';
+        const exchangeRateUSD = 0.012;
+
+        // Indian Heritage Product Catalog Data
+        let PRODUCTS = [
+            {
+                id: 'prod-1',
+                name: 'Chanderi Linen Belted Sari-Dress',
+                category: 'dresses',
+                priceINR: 16283,
+                originalPriceINR: 19200,
+                isNew: true,
+                isBestSeller: true,
+                rating: 4.9,
+                colors: [{ name: 'Oatmeal Khadi', class: 'bg-[#E5DDC8]' }, { name: 'Desi Sage', class: 'bg-[#98A793]' }],
+                sizes: ['XS', 'S', 'M', 'L'],
+                image: 'https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?q=80&w=1000&auto=format&fit=crop',
+                description: 'Crafted from pure Indian handloom linen with subtle Chanderi zari accents, featuring a versatile waist tie and deep pockets.'
+            },
+            {
+                id: 'prod-2',
+                name: 'Khadi Linen Nehru Collar Shirt',
+                category: 'tops',
+                priceINR: 11273,
+                originalPriceINR: null,
+                isNew: false,
+                isBestSeller: true,
+                rating: 4.8,
+                colors: [{ name: 'Raw Cream', class: 'bg-[#F4EBE1]' }, { name: 'Terracotta Clay', class: 'bg-[#C4A482]' }],
+                sizes: ['S', 'M', 'L', 'XL'],
+                image: 'https://images.unsplash.com/photo-1598554747436-c9293d6a588f?q=80&w=1000&auto=format&fit=crop',
+                description: 'Breathable Indian Khadi linen shirt with an elegant Nehru mandarin collar and coconut shell buttons.'
+            },
+            {
+                id: 'prod-3',
+                name: 'Pleated Handloom Linen Trousers',
+                category: 'trousers',
+                priceINR: 13778,
+                originalPriceINR: 15800,
+                isNew: true,
+                isBestSeller: false,
+                rating: 4.7,
+                colors: [{ name: 'Charcoal Indigo', class: 'bg-[#2D2D2D]' }, { name: 'Sand Khadi', class: 'bg-[#E5DDC8]' }],
+                sizes: ['XS', 'S', 'M', 'L'],
+                image: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=1000&auto=format&fit=crop',
+                description: 'Relaxed wide-leg trousers woven from organic Indian hemp and flax with classic front pleats.'
+            },
+            {
+                id: 'prod-4',
+                name: 'Structured Organic Flax Angrakha Coat',
+                category: 'outerwear',
+                priceINR: 23798,
+                originalPriceINR: null,
+                isNew: true,
+                isBestSeller: false,
+                rating: 5.0,
+                colors: [{ name: 'Desert Sand', class: 'bg-[#D2B48C]' }, { name: 'Neel Indigo', class: 'bg-[#98A793]' }],
+                sizes: ['S', 'M', 'L'],
+                image: 'https://images.unsplash.com/photo-1544441893-675973e31985?q=80&w=1000&auto=format&fit=crop',
+                description: 'Lightweight trench coat inspired by traditional Indian Angrakha overlaps for effortless year-round layering.'
+            },
+            {
+                id: 'prod-5',
+                name: 'Desi Organic Cotton Chunky Cardigan',
+                category: 'knitwear',
+                priceINR: 14613,
+                originalPriceINR: null,
+                isNew: false,
+                isBestSeller: true,
+                rating: 4.9,
+                colors: [{ name: 'Kora Cream', class: 'bg-[#F4EBE1]' }],
+                sizes: ['S', 'M', 'L'],
+                image: 'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?q=80&w=1000&auto=format&fit=crop',
+                description: 'Hand-knitted cardigan made from rainfed indigenous Kala cotton yarns.'
+            },
+            {
+                id: 'prod-6',
+                name: 'Botanical Indigo Linen Dupatta-Scarf',
+                category: 'accessories',
+                priceINR: 5428,
+                originalPriceINR: null,
+                isNew: false,
+                isBestSeller: false,
+                rating: 4.6,
+                colors: [{ name: 'Wild Indigo', class: 'bg-[#98A793]' }, { name: 'Madder Root', class: 'bg-[#C4A482]' }],
+                sizes: ['One Size'],
+                image: 'https://images.unsplash.com/photo-1601924994987-69e26d50dc26?q=80&w=1000&auto=format&fit=crop',
+                description: 'Hand-spun pure linen scarf dyed naturally in Rajasthan using wild indigo leaves and madder root extracts.'
+            }
+        ];
+
+        // Restored Default App User & Orders State
+        let cart = [];
+        let wishlist = [];
+        let appliedPromo = null;
+        let pointsRedeemed = false;
+        let userLoggedIn = false;
+        let isRegisterMode = false;
+
+        let userData = {
+            name: 'Ananya Sharma',
+            email: 'ananya@example.com',
+            phone: '+91 98765 43210',
+            points: 200,
+            tier: 'Seedling'
+        };
+
+        let userOrders = [
+            {
+                id: 'RFC-94821',
+                items: '2 items',
+                desc: 'Organic Linen Set • Delivered',
+                total: 24890,
+                date: '3 days ago'
+            }
+        ];
+
+        // --- CATALOG RENDERING WITH EDITABLE HOOKS ---
+        let activeCategory = 'all';
+
+        function renderProducts() {
+            const grid = document.getElementById('products-grid');
+            if (!grid) return;
+            grid.innerHTML = '';
+
+            const filtered = activeCategory === 'all' 
+                ? PRODUCTS 
+                : PRODUCTS.filter(p => p.category === activeCategory);
+
+            filtered.forEach(p => {
+                const card = document.createElement('div');
+                card.className = 'product-card group bg-brandCardBg rounded-2xl overflow-hidden border border-brandDark/5 flex flex-col justify-between transition-all duration-300 hover:shadow-xl';
+
+                card.innerHTML = `
+                    <div class="relative aspect-[3/4] bg-stone-200 overflow-hidden cursor-pointer" onclick="openQuickView('${p.id}')">
+                        <img id="img-${p.id}" src="${p.image}" alt="${p.name}" class="w-full h-full object-cover img-zoom">
+                        
+                        <!-- Badges -->
+                        <div class="absolute top-3 left-3 flex flex-col gap-1.5">
+                            ${p.isNew ? `<span class="bg-brandDark text-white text-[9px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full">NEW</span>` : ''}
+                            ${p.isBestSeller ? `<span class="bg-brandSage text-white text-[9px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full">BESTSELLER</span>` : ''}
+                        </div>
+
+                        <!-- Wishlist Button -->
+                        <button onclick="event.stopPropagation(); toggleWishlist('${p.id}')" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/80 hover:bg-white text-brandDark flex items-center justify-center transition-colors">
+                            <i class="${wishlist.includes(p.id) ? 'fa-solid text-red-500' : 'fa-regular'} fa-heart text-xs"></i>
+                        </button>
+                    </div>
+
+                    <div class="p-5 space-y-3 flex-grow flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start">
+                                <h3 onclick="openQuickView('${p.id}')" class="font-serif text-lg font-semibold text-brandDark hover:text-brandSage cursor-pointer transition-colors">${p.name}</h3>
+                            </div>
+                            <p class="text-xs text-brandMuted capitalize">${p.category}</p>
+                        </div>
+
+                        <div class="flex items-center justify-between pt-2 border-t border-brandDark/5">
+                            <div class="space-x-1.5">
+                                <span class="font-bold text-brandDark text-sm">${formatPrice(p.priceINR)}</span>
+                                ${p.originalPriceINR ? `<span class="text-xs text-stone-400 line-through">${formatPrice(p.originalPriceINR)}</span>` : ''}
+                            </div>
+                            <button onclick="addToCart('${p.id}')" class="px-3.5 py-1.5 bg-brandDark text-white text-[10px] font-bold uppercase tracking-wider rounded-lg hover:bg-brandSage transition-colors">
+                                Add +
+                            </button>
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // --- AUTH & LIVE USER DASHBOARD ENGINE ---
+        function switchAuthTab(tab) {
+            const loginBtn = document.getElementById('tab-login');
+            const registerBtn = document.getElementById('tab-register');
+            const fieldName = document.getElementById('field-name');
+            const fieldPhone = document.getElementById('field-phone');
+            const fieldNewsletter = document.getElementById('field-newsletter');
+            const submitBtn = document.getElementById('auth-submit-btn');
+            const pwdLabel = document.getElementById('label-password');
+            const pwdInput = document.getElementById('auth-password');
+
+            isRegisterMode = (tab === 'register');
+
+            if (isRegisterMode) {
+                registerBtn.className = "flex-1 py-2.5 border-b-2 border-brandDark text-brandDark font-bold";
+                loginBtn.className = "flex-1 py-2.5 border-b-2 border-transparent text-stone-400 font-semibold";
+                fieldName.classList.remove('hidden');
+                fieldPhone.classList.remove('hidden');
+                fieldNewsletter.classList.remove('hidden');
+                pwdLabel.innerText = "Password (Min 8 Characters)";
+                pwdInput.minLength = 8;
+                submitBtn.innerText = "Register Account & Claim 200 Pts";
+            } else {
+                loginBtn.className = "flex-1 py-2.5 border-b-2 border-brandDark text-brandDark font-bold";
+                registerBtn.className = "flex-1 py-2.5 border-b-2 border-transparent text-stone-400 font-semibold";
+                fieldName.classList.add('hidden');
+                fieldPhone.classList.add('hidden');
+                fieldNewsletter.classList.add('hidden');
+                pwdLabel.innerText = "Password";
+                pwdInput.removeAttribute('minlength');
+                submitBtn.innerText = "Sign In Live";
+            }
+        }
+
+        function quickDemoLogin() {
+            userData = {
+                name: 'Ananya Sharma',
+                email: 'ananya.sharma@example.com',
+                phone: '+91 98765 43210',
+                points: 350,
+                tier: 'Bloom'
+            };
+            userLoggedIn = true;
+            updateUserUI();
+        }
+
+        function handleAuthSubmit(e) {
+            e.preventDefault();
+
+            if (isRegisterMode) {
+                const nameVal = document.getElementById('auth-name').value.trim();
+                const emailVal = document.getElementById('auth-email').value.trim();
+                const phoneVal = document.getElementById('auth-phone').value.trim();
+                
+                userData = {
+                    name: nameVal || 'Linen Enthusiast',
+                    email: emailVal,
+                    phone: phoneVal || '+91 90000 00000',
+                    points: 200,
+                    tier: 'Seedling'
+                };
+            } else {
+                const emailVal = document.getElementById('auth-email').value.trim();
+                if (emailVal) {
+                    userData.email = emailVal;
+                    userData.name = emailVal.split('@')[0].replace('.', ' ');
+                }
+            }
+
+            userLoggedIn = true;
+            updateUserUI();
+        }
+
+        function updateUserUI() {
+            document.getElementById('account-badge-dot').classList.remove('hidden');
+            document.getElementById('account-guest-view').classList.add('hidden');
+            document.getElementById('account-user-view').classList.remove('hidden');
+
+            document.getElementById('user-display-name').innerText = userData.name;
+            document.getElementById('user-display-email').innerText = userData.email;
+            document.getElementById('user-display-phone').innerText = userData.phone ? `Phone: ${userData.phone}` : '';
+            document.getElementById('user-points-val').innerText = userData.points;
+            document.getElementById('header-user-status-text').innerText = userData.name.split(' ')[0];
+
+            renderOrderHistory();
+            updateCartUI();
+        }
+
+        function renderOrderHistory() {
+            const container = document.getElementById('order-history-list');
+            container.innerHTML = '';
+            document.getElementById('order-count-text').innerText = `${userOrders.length} Order(s)`;
+
+            userOrders.forEach(o => {
+                const div = document.createElement('div');
+                div.className = 'p-3 bg-white rounded-xl border border-brandDark/10 flex justify-between items-center';
+                div.innerHTML = `
+                    <div>
+                        <p class="font-bold text-brandDark">Order #${o.id}</p>
+                        <p class="text-[10px] text-brandMuted">${o.items} • ${o.desc}</p>
+                    </div>
+                    <span class="font-bold text-brandDark">${formatPrice(o.total)}</span>
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        function logoutUser() {
+            userLoggedIn = false;
+            pointsRedeemed = false;
+            document.getElementById('account-badge-dot').classList.add('hidden');
+            document.getElementById('account-user-view').classList.add('hidden');
+            document.getElementById('account-guest-view').classList.remove('hidden');
+            document.getElementById('header-user-status-text').innerText = 'Live Account Login';
+            updateCartUI();
+        }
+
+        function handleCheckoutSubmit(e) {
+            e.preventDefault();
+            closeCheckoutModal();
+            
+            // Add new order to history
+            const newOrderId = 'RFC-' + Math.floor(10000 + Math.random() * 90000);
+            userOrders.unshift({
+                id: newOrderId,
+                items: cart.length + ' item(s)',
+                desc: cart.map(i => i.name).join(', '),
+                total: cart.reduce((acc, i) => acc + (i.priceINR * i.qty), 0),
+                date: 'Just Now'
+            });
+
+            // Reward 50 pts on checkout
+            userData.points += 50;
+
+            cart = [];
+            updateCartUI();
+            if (userLoggedIn) updateUserUI();
+            document.getElementById('confirmation-modal').classList.remove('hidden');
+        }
+
+        // --- EXISTING UTILITY FUNCTIONS ---
+        function formatPrice(amountINR) {
+            if (currentCurrency === 'USD') {
+                const usdVal = Math.round(amountINR * exchangeRateUSD);
+                return `$${usdVal}`;
+            }
+            return `₹${amountINR.toLocaleString('en-IN')}`;
+        }
+
+        function changeCurrency(newCurrency) {
+            currentCurrency = newCurrency;
+            renderProducts();
+            updateCartUI();
+        }
+
+        function filterProducts(category) {
+            activeCategory = category;
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                if (btn.dataset.cat === category) {
+                    btn.className = "filter-btn active-filter px-5 py-2 rounded-full text-xs font-semibold tracking-wider uppercase transition-all duration-300 bg-brandDark text-white shadow-sm";
+                } else {
+                    btn.className = "filter-btn px-5 py-2 rounded-full text-xs font-semibold tracking-wider uppercase transition-all duration-300 bg-white text-brandMuted hover:text-brandDark border border-brandDark/10";
+                }
+            });
+            renderProducts();
+        }
+
+        function addToCart(productId, size = 'M') {
+            const product = PRODUCTS.find(p => p.id === productId);
+            const existing = cart.find(item => item.id === productId && item.size === size);
+
+            if (existing) {
+                existing.qty += 1;
+            } else {
+                cart.push({ ...product, size, qty: 1 });
+            }
+
+            updateCartUI();
+            toggleCartDrawer(true);
+        }
+
+        function updateCartQty(productId, size, change) {
+            const item = cart.find(i => i.id === productId && i.size === size);
+            if (item) {
+                item.qty += change;
+                if (item.qty <= 0) {
+                    cart = cart.filter(i => !(i.id === productId && i.size === size));
+                }
+            }
+            updateCartUI();
+        }
+
+        function updateCartUI() {
+            const container = document.getElementById('cart-items-container');
+            if (!container) return;
+            container.innerHTML = '';
+
+            let subtotalINR = 0;
+            let totalItems = 0;
+
+            cart.forEach(item => {
+                subtotalINR += item.priceINR * item.qty;
+                totalItems += item.qty;
+
+                const row = document.createElement('div');
+                row.className = 'flex items-center space-x-4 p-3 bg-white rounded-xl border border-brandDark/5';
+                row.innerHTML = `
+                    <img src="${item.image}" class="w-14 h-18 object-cover rounded-lg bg-stone-100">
+                    <div class="flex-grow space-y-1">
+                        <h4 class="font-serif font-semibold text-xs text-brandDark">${item.name}</h4>
+                        <p class="text-[10px] text-brandMuted">Size: ${item.size} • ${formatPrice(item.priceINR)}</p>
+                        <div class="flex items-center space-x-2 pt-1">
+                            <button onclick="updateCartQty('${item.id}', '${item.size}', -1)" class="w-5 h-5 bg-stone-100 text-brandDark text-xs font-bold rounded flex items-center justify-center">-</button>
+                            <span class="text-xs font-bold">${item.qty}</span>
+                            <button onclick="updateCartQty('${item.id}', '${item.size}', 1)" class="w-5 h-5 bg-stone-100 text-brandDark text-xs font-bold rounded flex items-center justify-center">+</button>
+                        </div>
+                    </div>
+                    <span class="text-xs font-bold text-brandDark">${formatPrice(item.priceINR * item.qty)}</span>
+                `;
+                container.appendChild(row);
+            });
+
+            const countBadge = document.getElementById('cart-count-badge');
+            if (countBadge) countBadge.innerText = totalItems;
+
+            const countHeading = document.getElementById('cart-items-count-heading');
+            if (countHeading) countHeading.innerText = `(${totalItems})`;
+
+            const freeShippingThreshold = 5000;
+            const remaining = freeShippingThreshold - subtotalINR;
+            const progressPercent = Math.min(100, (subtotalINR / freeShippingThreshold) * 100);
+
+            const progressBar = document.getElementById('shipping-progress-bar');
+            if (progressBar) progressBar.style.width = `${progressPercent}%`;
+
+            const progAmount = document.getElementById('shipping-progress-amount');
+            const progText = document.getElementById('shipping-progress-text');
+            if (remaining <= 0) {
+                if (progAmount) progAmount.innerText = 'Unlocked!';
+                if (progText) progText.innerText = '🎉 Free Shipping Unlocked';
+            } else {
+                if (progAmount) progAmount.innerText = `${formatPrice(remaining)} away`;
+                if (progText) progText.innerText = 'Free Shipping Progress';
+            }
+
+            let discountINR = 0;
+            if (appliedPromo === 'REFACE15') discountINR += subtotalINR * 0.15;
+            if (pointsRedeemed) discountINR += 800;
+
+            const totalINR = Math.max(0, subtotalINR - discountINR);
+
+            const subtotalVal = document.getElementById('cart-subtotal-val');
+            if (subtotalVal) subtotalVal.innerText = formatPrice(subtotalINR);
+
+            const totalVal = document.getElementById('cart-total-val');
+            if (totalVal) totalVal.innerText = formatPrice(totalINR);
+
+            const finalAmt = document.getElementById('checkout-final-amt');
+            if (finalAmt) finalAmt.innerText = formatPrice(totalINR);
+
+            const discountRow = document.getElementById('discount-row');
+            if (discountRow) {
+                if (discountINR > 0) {
+                    discountRow.classList.remove('hidden');
+                    const discVal = document.getElementById('cart-discount-val');
+                    if (discVal) discVal.innerText = `-${formatPrice(discountINR)}`;
+                } else {
+                    discountRow.classList.add('hidden');
+                }
+            }
+
+            const loyaltyBox = document.getElementById('loyalty-cart-box');
+            if (loyaltyBox) {
+                if (userLoggedIn) {
+                    loyaltyBox.classList.remove('hidden');
+                } else {
+                    loyaltyBox.classList.add('hidden');
+                }
+            }
+        }
+
+        function toggleCartDrawer(open) {
+            const drawer = document.getElementById('cart-drawer');
+            const content = document.getElementById('cart-drawer-content');
+            if (open || drawer.classList.contains('opacity-0')) {
+                drawer.classList.remove('opacity-0', 'pointer-events-none');
+                content.classList.remove('translate-x-full');
+            } else {
+                drawer.classList.add('opacity-0', 'pointer-events-none');
+                content.classList.add('translate-x-full');
+            }
+        }
+
+        function openQuickView(id) {
+            const p = PRODUCTS.find(item => item.id === id);
+            document.getElementById('qv-image').src = p.image;
+            document.getElementById('qv-category').innerText = p.category;
+            document.getElementById('qv-name').innerText = p.name;
+            document.getElementById('qv-price').innerText = formatPrice(p.priceINR);
+            document.getElementById('qv-description').innerText = p.description;
+            
+            document.getElementById('qv-add-btn').onclick = () => {
+                addToCart(p.id);
+                closeQuickView();
+            };
+
+            document.getElementById('quickview-modal').classList.remove('hidden');
+        }
+
+        function closeQuickView() {
+            document.getElementById('quickview-modal').classList.add('hidden');
+        }
+
+        function handleAccountClick() {
+            document.getElementById('account-modal').classList.remove('hidden');
+        }
+        function closeAccountModal() {
+            document.getElementById('account-modal').classList.add('hidden');
+        }
+
+        function togglePointsRedemption() {
+            pointsRedeemed = !pointsRedeemed;
+            const btn = document.getElementById('redeem-pts-btn');
+            if (pointsRedeemed) {
+                btn.innerText = 'Applied ✓';
+                btn.className = 'px-3 py-1 bg-brandDark text-white rounded-lg text-[10px] font-bold uppercase';
+            } else {
+                btn.innerText = 'Apply';
+                btn.className = 'px-3 py-1 bg-brandSage text-white rounded-lg text-[10px] font-bold uppercase';
+            }
+            updateCartUI();
+        }
+
+        function applyPromoCode() {
+            const val = document.getElementById('promo-input').value.trim().toUpperCase();
+            if (val === 'REFACE15') {
+                appliedPromo = 'REFACE15';
+                alert('Promo code REFACE15 applied (15% Off)!');
+                updateCartUI();
+            } else {
+                alert('Invalid promo code. Try REFACE15');
+            }
+        }
+
+        function openCheckoutModal() {
+            if (cart.length === 0) {
+                alert('Your shopping bag is empty.');
+                return;
+            }
+            toggleCartDrawer(false);
+            document.getElementById('checkout-modal').classList.remove('hidden');
+        }
+
+        function closeCheckoutModal() {
+            document.getElementById('checkout-modal').classList.add('hidden');
+        }
+
+        function closeConfirmationModal() {
+            document.getElementById('confirmation-modal').classList.add('hidden');
+        }
+
+        function openWishlistModal() {
+            renderWishlistItems();
+            document.getElementById('wishlist-modal').classList.remove('hidden');
+        }
+
+        function closeWishlistModal() {
+            document.getElementById('wishlist-modal').classList.add('hidden');
+        }
+
+        function renderWishlistItems() {
+            const container = document.getElementById('wishlist-items-container');
+            if (!container) return;
+            container.innerHTML = '';
+
+            if (wishlist.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center py-8 space-y-2">
+                        <i class="fa-regular fa-heart text-3xl text-stone-300"></i>
+                        <p class="text-xs text-brandMuted font-light">Your wishlist is currently empty.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            wishlist.forEach(id => {
+                const item = PRODUCTS.find(p => p.id === id);
+                if (!item) return;
+
+                const row = document.createElement('div');
+                row.className = 'flex items-center justify-between p-3 bg-white rounded-2xl border border-brandDark/10 space-x-3';
+                row.innerHTML = `
+                    <div class="flex items-center space-x-3">
+                        <img src="${item.image}" class="w-12 h-16 object-cover rounded-lg">
+                        <div>
+                            <h4 class="font-serif font-semibold text-xs text-brandDark">${item.name}</h4>
+                            <p class="text-[10px] text-brandMuted font-bold">${formatPrice(item.priceINR)}</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <button onclick="addToCart('${item.id}'); closeWishlistModal();" class="px-3 py-1.5 bg-brandDark text-white text-[10px] font-bold uppercase rounded-lg hover:bg-brandSage transition-colors">
+                            Add to Bag
+                        </button>
+                        <button onclick="toggleWishlist('${item.id}'); renderWishlistItems();" class="text-stone-400 hover:text-red-500 p-1 text-xs">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                    </div>
+                `;
+                container.appendChild(row);
+            });
+        }
+
+        function toggleWishlist(id) {
+            if (wishlist.includes(id)) {
+                wishlist = wishlist.filter(i => i !== id);
+            } else {
+                wishlist.push(id);
+            }
+            document.getElementById('wishlist-count').innerText = wishlist.length;
+            renderProducts();
+        }
+
+        function toggleMobileNav() {
+            const nav = document.getElementById('mobile-nav');
+            const content = document.getElementById('mobile-nav-content');
+            if (!nav || !content) return;
+            if (nav.classList.contains('opacity-0')) {
+                nav.classList.remove('opacity-0', 'pointer-events-none');
+                content.classList.remove('-translate-x-full');
+            } else {
+                nav.classList.add('opacity-0', 'pointer-events-none');
+                content.classList.add('-translate-x-full');
+            }
+        }
+
+        function handleNewsletter(e) {
+            e.preventDefault();
+            alert('Thank you for subscribing to reface CLOTHING!');
+            e.target.reset();
+        }
+
+        // --- INITIALIZATION ---
+        window.onload = function() {
+            renderProducts();
+            updateCartUI();
+            // Overlay content from /content/*.json (falls back to the HTML above if unavailable)
+            RefaceCMS.load(function (products) {
+                if (products) { PRODUCTS = products; renderProducts(); updateCartUI(); }
+            });
+};
+        // --- VIDEO SHOWCASE CONTROLLER FUNCTIONS ---
+        function switchShowcaseVideo(url, title, poster, subtitle) {
+            const player = document.getElementById('showcase-main-video');
+            const source = document.getElementById('showcase-video-src');
+            const titleElem = document.getElementById('showcase-video-title');
+
+            if (source) source.src = url;
+            if (player) {
+                if (poster) player.poster = poster;
+                player.load();
+                player.play().catch(() => {});
+            }
+            if (titleElem && title) titleElem.innerText = title;
+            var subElem = document.getElementById('showcase-video-subtitle');
+            if (subElem && subtitle) subElem.innerText = subtitle;
+        }
+    </script>
+</body></html>
